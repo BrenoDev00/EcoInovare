@@ -1,4 +1,5 @@
 # 🔥 EcoInovare - Soluções Ecológicas para empresas (em andamento)
+![Seção Hero EcoInovare](./IMAGENS/secao_hero_EcoInovare.jpg)
 ## Descrição
 - Aplicação front-end que fornece planos de serviços sustentáveis personalizados para outras empresas.
 - No momento estou utilizando HTML5 e CSS3 para desenvolvê-la. Em breve estarei utilizando Javascript para adicionar interatividade às páginas da aplicação.
