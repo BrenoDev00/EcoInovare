@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+/* Fonte Opens Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Configuração Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color-1: #87d887;
+  --primary-color-2: #14863c;
+  --primary-color-3: #21401c;
+  --primary-color-4: #5058f2;
+  --primary-color-5: #97db9e;
+  --primary-color-6: #72bf6d;
+
+  --gray-color-1: #f5f5f5;
+  --gray-color-2: #bbb;
+  --gray-color-3: #818181;
+
+  --main-font: "Open Sans", sans-serif;
+}
+
+.section {
+  padding: 6.1rem;
+  font-family: var(--main-font);
+  color: var(--primary-color-3);
+}
+
+.btn {
+  align-self: center;
+  border-radius: 3.12rem;
+  padding: 0.82rem 2.5rem;
+  font-size: 2.3rem;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Menu de Navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6.1rem;
+  border-bottom: 0.1rem solid var(--primary-color-2);
+}
+
+.EcoInovare-logo {
+  width: 25rem;
+}
+
+.navigation-items {
+  display: flex;
+  gap: 4.88rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--main-font);
+}
+
+.navigation-items li a {
+  color: var(--primary-color-3);
+}
+
+.navigation-items li {
+  transition: 0.2s;
+}
+
+.navigation-items li:hover {
+  transform: scale(1.1);
+}
+
+/* Seção Hero */
+.hero-section {
+  height: 100vh;
+  position: relative;
+}
+
+.top-right-circle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 20rem;
+  width: 20rem;
+  background-color: var(--primary-color-5);
+  clip-path: circle(15rem at 20rem 0rem);
+}
+
+.bottom-left-circle {
+  height: 40rem;
+  width: 40rem;
+  background-color: var(--primary-color-5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  clip-path: circle(25rem at 5rem 40rem);
+}
+
+.overlapping-bottom-left-circle {
+  height: 20rem;
+  width: 15rem;
+  background-color: var(--primary-color-6);
+  position: absolute;
+  bottom: 9rem;
+  left: 13rem;
+  clip-path: circle();
+}
+
+.container-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container-hero-information {
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
+}
+
+.container-hero-information h1,
+.container-hero-information p strong {
+  color: var(--primary-color-3);
+}
+
+.container-hero-information h2 {
+  color: var(--primary-color-3);
+  font-size: 3.32rem;
+}
+
+.container-hero-information p {
+  font-size: 2.3rem;
+  line-height: 1.6;
+}
+
+.container-hero-information em {
+  color: var(--primary-color-4);
+}
+
+.container-hero-information h2 strong {
+  color: var(--primary-color-2);
+}
+
+.btn-learn-more {
+  background-color: var(--primary-color-2);
+  margin-top: 2rem;
+}
+
+.btn-learn-more::after {
+  content: "\1F86A";
+  padding-left: 0.52rem;
+}
+
+.btn-learn-more:hover {
+  background-color: var(--primary-color-4);
+  transform: translateY(-0.5rem);
+}
+
+.hero-illustration {
+  width: 55rem;
+}
+
