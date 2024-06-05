@@ -262,3 +262,323 @@ nav {
   background-color: white;
   color: var(--primary-color-4);
 }
+
+/* Seção Dados Estatísticos */
+.statistics-data-section {
+  background-image: url(../IMAGENS/imagem-fundo-dados-estatisticos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0rem 0rem 1rem var(--gray-color-2);
+  margin-top: 35rem;
+}
+
+.container-statistics-data ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 6.1rem 2rem;
+}
+
+.container-statistics-data p {
+  color: var(--primary-color-2);
+  text-align: center;
+  font-size: 3.32rem;
+  font-weight: bold;
+}
+
+/* Seção Diferenciais */
+.features-section {
+  background-color: var(--primary-color-4);
+  margin-top: 35rem;
+  box-shadow: 0rem 0.2rem 2rem 0rem var(--gray-color-3);
+}
+
+.container-features {
+  display: flex;
+  flex-flow: column;
+}
+
+.features-title {
+  position: relative;
+  text-align: center;
+  font-size: 3.98rem;
+  color: white;
+}
+
+.features-title::after {
+  position: absolute;
+  content: "";
+  border-bottom: 0.5rem solid white;
+  border-radius: 2rem;
+  top: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+}
+
+.container-features-cards {
+  display: flex;
+  gap: 7.63rem;
+  font-size: 2.3rem;
+}
+
+.feature-card {
+  flex: 1;
+  position: relative;
+  bottom: -25rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 6.1rem 4.88rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: var(--gray-color-1);
+  box-shadow: 0rem 0.2rem 1rem 0rem var(--gray-color-3);
+}
+
+.feature-card:nth-child(2) {
+  bottom: -20rem;
+}
+
+.feature-card-icon {
+  width: 10rem;
+}
+
+.feature-card h3 {
+  color: var(--primary-color-2);
+}
+
+.feature-card p {
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Seção Depoimentos */
+.testimonials-section {
+  margin-top: 35rem;
+}
+
+.container-testimonials {
+  display: flex;
+  flex-flow: column;
+  gap: 11.92rem;
+}
+
+.testimonials-title {
+  position: relative;
+  text-align: center;
+  font-size: 3.98rem;
+}
+
+.testimonials-title::after {
+  position: absolute;
+  content: "";
+  border-bottom: 0.5rem solid var(--primary-color-4);
+  border-radius: 2rem;
+  top: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+}
+
+.container-testimonials-cards-carousel {
+  display: flex;
+  gap: 3.9rem;
+  padding: 4.88rem;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 3.12rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0rem 0.2rem 1rem 0rem var(--gray-color-2);
+}
+
+.client-information {
+  display: flex;
+  align-items: center;
+  gap: 1.28rem;
+}
+
+.client-image {
+  height: 14rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.client-job-name {
+  font-size: 1.92rem;
+}
+
+.client-job-title-highlight {
+  font-size: 1.8rem;
+  color: var(--primary-color-2);
+}
+
+.client-testimonial p {
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+
+.carousel-indicators {
+  margin-top: -8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.carousel-indicators span {
+  background-color: var(--primary-color-4);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+/* Seção Formulário de Conversão */
+.conversion-form-section {
+  margin-top: 20rem;
+}
+
+.container-form-conversion-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-title-and-illustration {
+  align-self: flex-start;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 6.1rem;
+}
+
+.container-title-and-illustration h2 {
+  font-size: 4.5rem;
+  color: var(--primary-color-4);
+}
+
+.container-title-and-illustration h3 {
+  font-size: 3.98rem;
+  color: var(--primary-color-2);
+}
+
+.conversion-form-illustration {
+  width: 50rem;
+}
+
+.conversion-form {
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column;
+  gap: 0.82rem;
+}
+
+label,
+input,
+textarea {
+  font-size: 1.92rem;
+}
+
+input,
+textarea {
+  padding: 0.82rem 1.2rem;
+  outline: none;
+  border: 0.1rem solid var(--gray-color-2);
+  background-color: var(--gray-color-1);
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  border-radius: 2rem;
+}
+
+textarea {
+  resize: none;
+  border-radius: 1.2rem;
+  font-family: var(--main-font);
+  text-align: justify;
+}
+
+.btn-submit-form {
+  border: none;
+  background-color: var(--primary-color-4);
+}
+
+.btn-submit-form:hover {
+  box-shadow: 0rem 0rem 3rem 0rem var(--gray-color-2);
+}
+
+/* Rodapé */
+.footer {
+  margin-top: 15rem;
+  background-color: var(--primary-color-3);
+  box-shadow: 0rem 0.2rem 2rem 0rem var(--gray-color-3);
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.container-footer h2 {
+  color: white;
+  font-size: 1.92rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  border-left: 0.3rem solid var(--primary-color-1);
+  padding-left: 0.7rem;
+}
+
+.container-footer ul {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+  padding-left: 0.5rem;
+}
+
+.container-footer li,
+.container-footer a {
+  color: var(--gray-color-2);
+  font-size: 1.4rem;
+}
+
+.container-footer a:hover {
+  color: white;
+}
+
+.container-footer li img {
+  width: 3rem;
+  fill: white;
+  stroke: white;
+}
+
+.services,
+.contact,
+.about-us,
+.social-media {
+  display: flex;
+  flex-flow: column;
+  gap: 2.3rem;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.82rem;
+  font-style: normal;
+}
