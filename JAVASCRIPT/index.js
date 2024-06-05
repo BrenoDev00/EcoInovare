@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const emailRegex =
     /^([a-z]){1,}([a-z0-9._-]){1,}([@]){1}([a-z]){2,}([.]){1}([a-z]){2,}([.]?){1}([a-z]?){2,}$/i;
 
-  // Adiciona ouvintes de evento 'input' para validação de formulário em tempo real
+  // Validação de formulário em tempo real
   requiredFields[0].addEventListener("input", validateNameField);
   requiredFields[1].addEventListener("input", validateCompanyField);
   requiredFields[2].addEventListener("input", validatePhoneNumberField);
