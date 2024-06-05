@@ -350,7 +350,7 @@
           </div>
 
           <div>
-            <form class="conversion-form" action="#">
+            <form id="conversion-form" class="conversion-form" action="#">
               <div class="form-group">
                 <label for="name">Nome</label>
                 <input
@@ -360,6 +360,7 @@
                   placeholder="*Seu nome"
                   required
                 />
+                <div class="error-message">Mínimo 3 caracteres</div>
               </div>
 
               <div class="form-group">
@@ -371,6 +372,7 @@
                   placeholder="*Nome da empresa"
                   required
                 />
+                <div class="error-message">Este campo é obrigatório</div>
               </div>
 
               <div class="form-group">
@@ -382,6 +384,7 @@
                   placeholder="*Telefone para contato"
                   required
                 />
+                <div class="error-message">Este campo é obrigatório</div>
               </div>
 
               <div class="form-group">
@@ -393,6 +396,7 @@
                   placeholder="*Seu melhor e-mail"
                   required
                 />
+                <div class="error-message">Informe um e-mail válido</div>
               </div>
 
               <div class="form-group">
