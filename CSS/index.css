@@ -26,6 +26,8 @@ html {
   --gray-color-2: #bbb;
   --gray-color-3: #818181;
 
+  --alert-color: rgb(226, 17, 17);
+
   --main-font: "Open Sans", sans-serif;
 }
 
@@ -482,6 +484,12 @@ nav {
   display: flex;
   flex-flow: column;
   gap: 0.82rem;
+}
+
+.error-message {
+  font-size: 1.6rem;
+  color: var(--alert-color);
+  display: none;
 }
 
 label,
