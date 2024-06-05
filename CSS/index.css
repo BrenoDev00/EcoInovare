@@ -489,6 +489,7 @@ nav {
 .error-message {
   font-size: 1.6rem;
   color: var(--alert-color);
+  display: none;
 }
 
 label,
