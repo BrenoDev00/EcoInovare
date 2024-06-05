@@ -10,9 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
   requiredFields[0].addEventListener("input", validateNameField);
   requiredFields[1].addEventListener("input", validateCompanyField);
   requiredFields[2].addEventListener("input", validatePhoneNumberField);
+  requiredFields[2].addEventListener("input", formatPhoneNumberField);
   requiredFields[3].addEventListener("input", validateEmailField);
 
-  // Validação de formulário no envio
+  // Validação de formulário após envio
   conversionForm.addEventListener("submit", function (event) {
     event.preventDefault();
     validateNameField();
@@ -48,11 +49,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function validatePhoneNumberField() {
-    if (requiredFields[2].value === "") {
+    if (requiredFields[2].value.length < 14) {
       showErrorMessage(2);
     } else {
       removeErrorMessage(2);
     }
+  }
+
+  function formatPhoneNumberField() {
+    const phoneNumberField = requiredFields[2];
+    phoneNumberField.addEventListener("input", function (event) {
+      let value = event.target.value.replace(/\D/g, "");
+      value = value.replace(/^(\d{2})(\d)/g, "($1) $2");
+      value = value.replace(/(\d)(\d{4})$/, "$1-$2");
+
+      event.target.value = value;
+    });
   }
 
   function validateEmailField() {
