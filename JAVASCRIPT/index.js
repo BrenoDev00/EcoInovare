@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Seção Formulário de Conversão
   const conversionForm = document.getElementById("conversion-form");
-  const requiredFields = document.querySelectorAll("error-message");
+  const requiredFields = document.querySelectorAll("required-field");
+  const errorMessage = document.querySelectorAll("error-message");
 
   conversionForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -9,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function validateNameField() {
-    requiredFields.addEventListener("input", function () {
+    requiredFields[0].addEventListener("input", function () {
       if (requiredFields[0].value.length < 3) {
-        requiredFields[0].style.display = "flex";
+        errorMessage[0].style.display = "flex";
       } else {
-        requiredFields[0].style.display = "none";
+        errorMessage[0].style.display = "none";
       }
     });
   }
