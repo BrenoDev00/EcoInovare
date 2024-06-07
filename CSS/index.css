@@ -442,6 +442,95 @@ nav {
   border-radius: 50%;
 }
 
+/* Seção Perguntas Frequentes */
+.frequent-questions-section {
+}
+
+.container-frequent-questions {
+  display: flex;
+  flex-flow: column;
+  gap: 11.92rem;
+}
+
+.frequent-questions-title {
+  font-size: 3.98rem;
+  text-align: center;
+  position: relative;
+}
+
+.frequent-questions-title::after {
+  position: absolute;
+  content: "";
+  border-bottom: 0.5rem solid var(--primary-color-4);
+  border-radius: 2rem;
+  top: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+}
+
+.container-accordion-and-illustration {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.accordion {
+  flex-basis: 85rem;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.accordion-item {
+  display: flex;
+  flex-flow: column;
+}
+
+.container-accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray-color-2);
+  /* border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem; */
+  border-radius: 2.5rem;
+  border-bottom: 0.3rem solid var(--gray-color-3);
+  border-right: 0.3rem solid var(--gray-color-3);
+  padding: 1.2rem 1.6rem;
+  cursor: pointer;
+}
+
+.accordion-title {
+  font-size: 1.8rem;
+}
+
+.up-arrow {
+  width: 2rem;
+}
+
+.accordion-content {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  background-color: var(--gray-color-1);
+  border: 0.1rem solid var(--gray-color-2);
+  /* padding: 2rem 2.5rem; */
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+}
+
+.active-item .accordion-content {
+  opacity: 1;
+  height: 100%;
+  padding: 2rem 2.5rem;
+}
+
+.frequent-questions-illustration {
+  width: 50rem;
+}
 /* Seção Formulário de Conversão */
 .conversion-form-section {
   margin-top: 20rem;
