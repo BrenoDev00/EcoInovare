@@ -444,6 +444,7 @@ nav {
 
 /* Seção Perguntas Frequentes */
 .frequent-questions-section {
+  margin-top: 10rem;
 }
 
 .container-frequent-questions {
@@ -492,8 +493,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--gray-color-2);
-  /* border-top-left-radius: 2.5rem;
-  border-top-right-radius: 2.5rem; */
   border-radius: 2.5rem;
   border-bottom: 0.3rem solid var(--gray-color-3);
   border-right: 0.3rem solid var(--gray-color-3);
@@ -505,35 +504,48 @@ nav {
   font-size: 1.8rem;
 }
 
-.up-arrow {
+.arrow-icon {
   width: 2rem;
+  transform: rotate(180deg);
 }
 
 .accordion-content {
   opacity: 0;
   height: 0;
   padding: 0;
+}
+
+.active-item .container-accordion-title {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.active-item .accordion-content {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+  opacity: 1;
+  height: 100%;
+  padding: 2rem 2.5rem;
   background-color: var(--gray-color-1);
   border: 0.1rem solid var(--gray-color-2);
-  /* padding: 2rem 2.5rem; */
   font-size: 1.6rem;
   font-weight: 500;
   border-bottom-left-radius: 2.5rem;
   border-bottom-right-radius: 2.5rem;
 }
 
-.active-item .accordion-content {
-  opacity: 1;
-  height: 100%;
-  padding: 2rem 2.5rem;
+.active-item .arrow-icon {
+  transform: rotate(0);
 }
 
 .frequent-questions-illustration {
-  width: 50rem;
+  width: 55rem;
 }
+
 /* Seção Formulário de Conversão */
 .conversion-form-section {
-  margin-top: 20rem;
+  margin-top: 15rem;
 }
 
 .container-form-conversion-section {
