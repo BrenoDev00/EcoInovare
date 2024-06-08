@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Seção Perguntas Frequentes
+  const accordionItem = document.querySelectorAll(".accordion-item");
+
+  accordionItem.forEach(function (accordion) {
+    accordion.addEventListener("click", function () {
+      accordion.classList.toggle("active-item");
+    });
+  });
+
   // Seção Formulário de Conversão
   const conversionForm = document.getElementById("conversion-form");
   const requiredFields = document.querySelectorAll(".required-field");
@@ -8,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Validação de formulário em tempo real
   requiredFields[0].addEventListener("input", validateNameField);
+  requiredFields[0].addEventListener("input", formatNameField);
   requiredFields[1].addEventListener("input", validateCompanyField);
   requiredFields[2].addEventListener("input", validatePhoneNumberField);
   requiredFields[2].addEventListener("input", formatPhoneNumberField);
@@ -33,15 +43,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function validateNameField() {
-    if (requiredFields[0].value.length < 3) {
+    if (requiredFields[0].value.trim().length < 3) {
       showErrorMessage(0);
     } else {
       removeErrorMessage(0);
     }
   }
 
+  function formatNameField() {
+    const nameField = requiredFields[0];
+    nameField.addEventListener("input", function (event) {
+      let value = event.target.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ' -]/g, "");
+      event.target.value = value;
+    });
+  }
+
   function validateCompanyField() {
-    if (requiredFields[1].value === "") {
+    if (requiredFields[1].value.trim() === "") {
       showErrorMessage(1);
     } else {
       removeErrorMessage(1);
@@ -68,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function validateEmailField() {
-    if (emailRegex.test(requiredFields[3].value)) {
+    if (emailRegex.test(requiredFields[3].value.trim())) {
       removeErrorMessage(3);
     } else {
       showErrorMessage(3);

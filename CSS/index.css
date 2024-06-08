@@ -480,12 +480,13 @@ nav {
   flex-basis: 85rem;
   display: flex;
   flex-flow: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .accordion-item {
   display: flex;
   flex-flow: column;
+  cursor: pointer;
 }
 
 .container-accordion-title {
@@ -497,7 +498,6 @@ nav {
   border-bottom: 0.3rem solid var(--gray-color-3);
   border-right: 0.3rem solid var(--gray-color-3);
   padding: 1.2rem 1.6rem;
-  cursor: pointer;
 }
 
 .accordion-title {
@@ -507,12 +507,14 @@ nav {
 .arrow-icon {
   width: 2rem;
   transform: rotate(180deg);
+  transition: transform 0.2s linear;
 }
 
 .accordion-content {
   opacity: 0;
   height: 0;
-  padding: 0;
+  transition: opacity 0.3s;
+  overflow: hidden;
 }
 
 .active-item .container-accordion-title {
