@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const errorMessage = document.querySelectorAll(".error-message");
   const emailRegex =
     /^([a-z]){1,}([a-z0-9._-]){1,}([@]){1}([a-z]){2,}([.]){1}([a-z]){2,}([.]?){1}([a-z]?){2,}$/i;
+  const formModal = document.getElementById("conversion-form-modal");
 
   // Validação de formulário em tempo real
   requiredFields[0].addEventListener("input", validateNameField);
@@ -30,6 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
     validateCompanyField();
     validatePhoneNumberField();
     validateEmailField();
+    showFormModal();
+    closeFormModal();
   });
 
   function showErrorMessage(index) {
@@ -91,5 +94,17 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       showErrorMessage(3);
     }
+  }
+
+  // Modal após envio de formulário
+  function showFormModal() {
+    formModal.showModal();
+  }
+
+  function closeFormModal() {
+    const btnCloseModal = document.getElementById("btn-close-modal");
+    btnCloseModal.addEventListener("click", function () {
+      formModal.close();
+    });
   }
 });

@@ -547,6 +547,7 @@ nav {
 
 /* Seção Formulário de Conversão */
 .conversion-form-section {
+  position: relative;
   margin-top: 15rem;
 }
 
@@ -632,6 +633,52 @@ textarea {
 
 .btn-submit-form:hover {
   box-shadow: 0rem 0rem 3rem 0rem var(--gray-color-2);
+}
+
+/* Modal após envio de formulário */
+.conversion-form-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2.5rem;
+}
+
+.conversion-form-modal::backdrop {
+  background-color: black;
+}
+
+.modal-icon-background {
+  border: 0.2rem solid var(--primary-color-2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.form-modal-icon {
+  width: 8rem;
+}
+
+.modal-group {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.modal-group p {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: var(--primary-color-3);
+}
+
+.btn-close-modal {
+  background-color: var(--primary-color-2);
+  color: white;
+  border: none;
 }
 
 /* Rodapé */
