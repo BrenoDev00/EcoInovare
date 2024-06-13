@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const errorMessage = document.querySelectorAll(".error-message");
   const emailRegex =
     /^([a-z]){1,}([a-z0-9._-]){1,}([@]){1}([a-z]){2,}([.]){1}([a-z]){2,}([.]?){1}([a-z]?){2,}$/i;
+  const placeHolder = document.getElementById("something-else");
   const formModal = document.getElementById("conversion-form-modal");
 
   // Validação de formulário em tempo real
@@ -96,9 +97,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Modal após envio de formulário
+  // Exibe o Modal de formulário se todos os campos do formulário forem validados corretamente
   function showFormModal() {
-    formModal.showModal();
+    if (
+      requiredFields[0].value.trim().length >= 3 &&
+      requiredFields[1].value.trim() !== "" &&
+      requiredFields[2].value.length >= 14 &&
+      emailRegex.test(requiredFields[3].value.trim())
+    ) {
+      formModal.showModal();
+
+      requiredFields[0].value = "";
+      requiredFields[1].value = "";
+      requiredFields[2].value = "";
+      requiredFields[3].value = "";
+      placeHolder.value = "";
+    }
   }
 
   function closeFormModal() {
