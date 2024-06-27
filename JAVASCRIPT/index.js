@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     validatePhoneNumberField();
     validateEmailField();
     showFormModal();
+    clearConversionFormFields();
     closeFormModal();
   });
 
@@ -106,19 +107,33 @@ document.addEventListener("DOMContentLoaded", function () {
       emailRegex.test(requiredFields[3].value.trim())
     ) {
       formModal.showModal();
-
-      requiredFields[0].value = "";
-      requiredFields[1].value = "";
-      requiredFields[2].value = "";
-      requiredFields[3].value = "";
-      placeHolder.value = "";
+      document.body.style.position = "fixed";
     }
   }
 
+  function clearConversionFormFields() {
+    requiredFields[0].value = "";
+    requiredFields[1].value = "";
+    requiredFields[2].value = "";
+    requiredFields[3].value = "";
+    placeHolder.value = "";
+  }
+
+  function preventEscKeyFunctionality() {
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        event.preventDefault();
+      }
+    });
+  }
+
   function closeFormModal() {
+    preventEscKeyFunctionality();
+
     const btnCloseModal = document.getElementById("btn-close-modal");
     btnCloseModal.addEventListener("click", function () {
       formModal.close();
+      document.body.style.position = "static";
     });
   }
 });
