@@ -1,4 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Seção Depoimentos
+  let count = 1;
+  document.getElementById("radio-btn1").checked = true;
+
+  function nextSlide() {
+    count++;
+
+    if (count > 3) {
+      count = 1;
+    }
+
+    document.getElementById("radio-btn" + count).checked = true;
+  }
+
+  setInterval(nextSlide, 10000);
+
   // Seção Perguntas Frequentes
   const accordionItem = document.querySelectorAll(".accordion-item");
 

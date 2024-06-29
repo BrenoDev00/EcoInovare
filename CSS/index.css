@@ -359,24 +359,25 @@ nav {
 
 /* Seção Depoimentos */
 .testimonials-section {
-  margin-top: 35rem;
+  margin-top: 45rem;
+  padding: 0;
 }
 
-.container-testimonials {
+.container-testimonials-section {
   display: flex;
   flex-flow: column;
-  gap: 11.92rem;
+  gap: 9.54rem;
 }
 
 .testimonials-title {
-  position: relative;
-  text-align: center;
   font-size: 3.98rem;
+  text-align: center;
+  position: relative;
 }
 
 .testimonials-title::after {
-  position: absolute;
   content: "";
+  position: absolute;
   border-bottom: 0.5rem solid var(--primary-color-4);
   border-radius: 2rem;
   top: 7rem;
@@ -385,66 +386,106 @@ nav {
   width: 15rem;
 }
 
-.container-testimonials-cards-carousel {
+.box-testimonials-carousel {
+  background-image: url(../IMAGENS/imagem-fundo-carrossel.jpg);
+  background-position: 50%;
+  background-size: cover;
+  box-shadow: 0 0 0.8rem var(--gray-color-2);
+}
+
+.container-testimonials-carousel {
+  margin: 0 auto;
+  width: 100rem;
+  height: 56rem;
+  overflow: hidden;
+}
+
+.testimonials-carousel {
+  width: 400%;
+  height: 40rem;
   display: flex;
-  gap: 3.9rem;
-  padding: 4.88rem;
+  border-radius: 1.2rem;
 }
 
-.testimonial-card {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: 3.12rem;
-  padding: 2rem;
-  border-radius: 2rem;
-  box-shadow: 0rem 0.2rem 1rem 0rem var(--gray-color-2);
+.testimonials-carousel input {
+  display: none;
 }
 
-.client-information {
-  display: flex;
-  align-items: center;
-  gap: 1.28rem;
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 0.8s;
 }
 
-.client-image {
-  height: 14rem;
-  width: 15rem;
-  border-radius: 50%;
+.slide img {
+  width: 100rem;
 }
 
-.client-job-name {
-  font-size: 1.92rem;
-}
-
-.client-job-title-highlight {
-  font-size: 1.8rem;
-  color: var(--primary-color-2);
-}
-
-.client-testimonial p {
-  text-align: center;
-  font-size: 1.7rem;
-  line-height: 1.6;
-}
-
-.carousel-indicators {
-  margin-top: -8rem;
+.manual-navigation {
   display: flex;
   justify-content: center;
-  gap: 1.6rem;
+  gap: 2rem;
+  position: absolute;
+  width: 100rem;
+  margin-top: 13rem;
 }
 
-.carousel-indicators span {
+.manual-btn {
+  border: 0.2rem solid var(--primary-color-4);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:hover {
   background-color: var(--primary-color-4);
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
+}
+
+#radio-btn1:checked ~ .first-slide {
+  margin-left: 0;
+}
+
+#radio-btn2:checked ~ .first-slide {
+  margin-left: -25%;
+}
+
+#radio-btn3:checked ~ .first-slide {
+  margin-left: -50%;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 100rem;
+  margin-top: 53rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navigation-auto div {
+  border: 0.2rem solid var(--primary-color-4);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#radio-btn1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: var(--primary-color-4);
+}
+
+#radio-btn2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: var(--primary-color-4);
+}
+
+#radio-btn3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: var(--primary-color-4);
 }
 
 /* Seção Perguntas Frequentes */
 .frequent-questions-section {
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 
 .container-frequent-questions {
