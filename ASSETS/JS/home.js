@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
     validatePhoneNumberField();
     validateEmailField();
     showFormModal();
-    clearConversionFormFields();
     closeFormModal();
   });
 
@@ -114,6 +113,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function clearConversionFormFields() {
+    requiredFields[0].value = "";
+    requiredFields[1].value = "";
+    requiredFields[2].value = "";
+    requiredFields[3].value = "";
+    placeHolder.value = "";
+  }
+
   // Exibe o Modal de formulário se todos os campos do formulário forem validados corretamente
   function showFormModal() {
     if (
@@ -124,15 +131,9 @@ document.addEventListener("DOMContentLoaded", function () {
     ) {
       formModal.showModal();
       document.body.style.position = "fixed";
-    }
-  }
 
-  function clearConversionFormFields() {
-    requiredFields[0].value = "";
-    requiredFields[1].value = "";
-    requiredFields[2].value = "";
-    requiredFields[3].value = "";
-    placeHolder.value = "";
+      clearConversionFormFields();
+    }
   }
 
   function preventEscKeyFunctionality() {
