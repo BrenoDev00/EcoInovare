@@ -2,22 +2,40 @@
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 0 6.1rem;
   border-bottom: 0.1rem solid var(--primary-color-2);
+}
+
+.container-logo-and-mobile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .EcoInovare-logo {
   width: 25rem;
 }
 
+.btn-menu {
+  display: none;
+  width: 3.9rem;
+  margin-right: 2rem;
+}
+
 .navigation-items {
   display: flex;
+  align-items: center;
   gap: 4.88rem;
   font-size: 2rem;
   font-weight: 500;
   font-family: var(--main-font);
 }
+
+/* .navigation-open {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+} */
 
 .navigation-items li a {
   color: var(--primary-color-3);
@@ -29,11 +47,6 @@ nav {
 
 .navigation-items li:hover {
   transform: scale(1.1);
-}
-
-.burger-menu-icon {
-  display: none;
-  width: 3.9rem;
 }
 
 /* Seção Hero */
