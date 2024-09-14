@@ -31,12 +31,6 @@ nav {
   font-family: var(--main-font);
 }
 
-/* .navigation-open {
-  display: flex;
-  flex-flow: column;
-  align-items: stretch;
-} */
-
 .navigation-items li a {
   color: var(--primary-color-3);
 }

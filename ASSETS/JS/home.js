@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Menu de Navegação
+  const menuBtn = document.querySelector(".btn-menu");
+  const navigationItems = document.querySelector(".navigation-items");
+
+  function showMobileNavigation() {
+    menuBtn.addEventListener("click", function () {
+      navigationItems.classList.toggle("navigation-open");
+
+      if (navigationItems.classList.contains("navigation-open")) {
+        menuBtn.src = "ASSETS/IMAGES/HOME/icone-fechar-menu-hamburguer.svg";
+      } else {
+        menuBtn.src = "ASSETS/IMAGES/HOME/icone-menu-hamburguer.svg";
+      }
+    });
+  }
+
+  showMobileNavigation();
+
   // Seção Depoimentos
   let count = 1;
   document.getElementById("radio-btn1").checked = true;

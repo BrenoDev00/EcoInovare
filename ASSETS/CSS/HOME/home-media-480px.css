@@ -9,12 +9,31 @@
     gap: 2.5rem;
   }
 
-  .navigation-items {
-    flex-flow: column;
-    margin-bottom: 2rem;
-  }
-
   .btn-menu {
     display: inline;
+  }
+
+  .navigation-items {
+    display: none;
+  }
+
+  .navigation-open {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1rem;
+  }
+
+  .navigation-items li {
+    position: relative;
+  }
+
+  .navigation-items li:not(:last-child)::after {
+    content: "";
+    width: 100vw;
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 0.1rem solid var(--primary-color-2);
   }
 }
