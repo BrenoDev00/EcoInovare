@@ -31,6 +31,11 @@ nav {
   transform: scale(1.1);
 }
 
+.burger-menu-icon {
+  display: none;
+  width: 3.9rem;
+}
+
 /* Seção Hero */
 .hero-section {
   height: 100vh;
