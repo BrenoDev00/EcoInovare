@@ -3,6 +3,7 @@
     font-size: 50%;
   }
 
+  /* Menu de navegação */
   nav {
     flex-flow: column;
     padding: 2rem;
@@ -17,12 +18,6 @@
     display: none;
   }
 
-  .navigation-open {
-    display: flex;
-    flex-flow: column;
-    margin-bottom: 1rem;
-  }
-
   .navigation-items li {
     position: relative;
   }
@@ -35,5 +30,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-bottom: 0.1rem solid var(--primary-color-2);
+  }
+
+  .navigation-open {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1rem;
   }
 }
