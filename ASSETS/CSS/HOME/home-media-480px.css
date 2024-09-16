@@ -60,6 +60,7 @@
 
   .container-hero {
     flex-flow: column;
+    gap: 3.9rem;
   }
 
   .container-hero-information h1,
@@ -75,6 +76,7 @@
 
   /* Seção Principais Serviços */
   .main-services-section {
+    margin-top: 3.12rem;
     position: static;
   }
 
