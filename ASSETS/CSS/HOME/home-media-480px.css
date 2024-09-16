@@ -183,4 +183,38 @@
   .modal-group p {
     width: max-content;
   }
+
+  /* Rodapé */
+  .container-footer {
+    flex-flow: column;
+    gap: 3.9rem;
+  }
+
+  .container-footer h2 {
+    font-size: 2.3rem;
+    text-align: left;
+  }
+
+  .services,
+  .contact,
+  .about-us,
+  .social-media {
+    align-self: flex-start;
+  }
+
+  .services li a {
+    font-size: 1.7rem;
+  }
+
+  .contact li p {
+    font-size: 1.7rem;
+  }
+
+  .about-us li a {
+    font-size: 1.7rem;
+  }
+
+  .social-media li img {
+    width: 3.5rem;
+  }
 }
