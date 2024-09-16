@@ -113,7 +113,7 @@
   .features-section {
     margin-top: 25rem;
   }
-  
+
   .container-features {
     gap: 6.5rem;
   }
@@ -134,4 +134,29 @@
     position: static;
   }
 
+  /* Seção Perguntas Frequentes */
+  .frequent-questions-title {
+    font-size: 3.32rem;
+  }
+
+  .frequent-questions-title::after {
+    top: 6rem;
+  }
+
+  .container-accordion-and-illustration {
+    flex-flow: column;
+    gap: 2.5rem;
+  }
+
+  .accordion {
+    flex-basis: auto;
+  }
+
+  .container-accordion-title {
+    gap: 1.6rem;
+  }
+
+  .accordion-title {
+    text-align: center;
+  }
 }
