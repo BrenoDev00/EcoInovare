@@ -41,4 +41,25 @@
     flex-flow: column;
     margin-bottom: 1rem;
   }
+
+  /* Seção Hero */
+  .top-right-circle,
+  .bottom-left-circle,
+  .overlapping-bottom-left-circle {
+    display: none;
+  }
+
+  .container-hero {
+    flex-flow: column;
+  }
+
+  .container-hero-information h1,
+  h2,
+  p {
+    text-align: center;
+  }
+
+  .hero-illustration {
+    align-self: center;
+  }
 }
