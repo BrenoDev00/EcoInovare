@@ -159,4 +159,28 @@
   .accordion-title {
     text-align: center;
   }
+
+  /* Seção Fomulário de Conversão */
+  .container-form-conversion-section {
+    flex-flow: column;
+  }
+
+  .container-title-and-illustration h2,
+  h3 {
+    text-align: left;
+  }
+
+  .container-title {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+  }
+
+  .conversion-form-illustration {
+    width: 40rem;
+  }
+
+  .modal-group p {
+    width: max-content;
+  }
 }
