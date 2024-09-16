@@ -108,4 +108,30 @@
   .service-image {
     width: 40rem;
   }
+
+  /* Seção Diferenciais */
+  .features-section {
+    margin-top: 25rem;
+  }
+  
+  .container-features {
+    gap: 6.5rem;
+  }
+
+  .features-title {
+    font-size: 3.32rem;
+  }
+
+  .features-title::after {
+    top: 6rem;
+  }
+
+  .container-features-cards {
+    flex-flow: column;
+  }
+
+  .feature-card {
+    position: static;
+  }
+
 }
