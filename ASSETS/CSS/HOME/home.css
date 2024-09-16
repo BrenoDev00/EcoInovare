@@ -219,7 +219,6 @@ nav {
 
 /* Seção Dados Estatísticos */
 .statistics-data-section {
-  background-image: url(../IMAGES/HOME/imagem-fundo-dados-estatisticos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -339,7 +338,6 @@ nav {
 }
 
 .box-testimonials-carousel {
-  background-image: url(../IMAGENS/imagem-fundo-carrossel.jpg);
   background-position: 50%;
   background-size: cover;
   box-shadow: 0 0 0.8rem var(--gray-color-2);
