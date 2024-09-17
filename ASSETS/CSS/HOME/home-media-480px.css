@@ -144,6 +144,29 @@
     position: static;
   }
 
+  /* Seção Depoimentos */
+  .testimonials-section {
+    padding: 0;
+  }
+
+  .testimonials-title {
+    padding: 0 2.5rem 0 2.5rem;
+    font-size: 3.32rem;
+  }
+
+  .testimonials-title::after {
+    top: 7rem;
+  }
+
+  .container-testimonials-carousel {
+    width: 35rem;
+  }
+
+  .navigation-auto,
+  .manual-navigation {
+    width: 35rem;
+  }
+
   /* Seção Perguntas Frequentes */
   .frequent-questions-title {
     font-size: 3.32rem;
