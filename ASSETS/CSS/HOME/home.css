@@ -223,7 +223,7 @@ nav {
   background-size: cover;
   background-attachment: fixed;
   box-shadow: inset 0rem 0rem 1rem var(--gray-color-2);
-  margin-top: 35rem;
+  margin-top: 15rem;
 }
 
 .container-statistics-data ul {
@@ -243,7 +243,7 @@ nav {
 /* Seção Diferenciais */
 .features-section {
   background-color: var(--primary-color-4);
-  margin-top: 35rem;
+  margin-top: 15rem;
   box-shadow: 0rem 0.2rem 2rem 0rem var(--gray-color-3);
 }
 
@@ -310,7 +310,7 @@ nav {
 
 /* Seção Depoimentos */
 .testimonials-section {
-  margin-top: 45rem;
+  margin-top: 40rem;
   padding: 0;
 }
 

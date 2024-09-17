@@ -110,20 +110,12 @@
   }
 
   /* Seção Dados Estatísticos */
-  .statistics-data-section {
-    margin-top: 30rem;
-  }
-
   .container-statistics-data ul {
     flex-flow: column;
     gap: 3.9rem;
   }
 
   /* Seção Diferenciais */
-  .features-section {
-    margin-top: 25rem;
-  }
-
   .container-features {
     gap: 6.5rem;
   }
