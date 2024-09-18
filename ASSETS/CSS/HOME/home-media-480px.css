@@ -47,14 +47,6 @@
     top: 6rem;
   }
 
-  .container-features-cards {
-    flex-flow: column;
-  }
-
-  .feature-card {
-    position: static;
-  }
-
   /* Seção Depoimentos */
   .testimonials-section {
     padding: 0;
