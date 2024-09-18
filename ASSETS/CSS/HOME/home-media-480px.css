@@ -36,7 +36,7 @@
     position: absolute;
     bottom: -3rem;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     border-bottom: 0.1rem solid var(--primary-color-2);
   }
 
@@ -144,6 +144,7 @@
 
   .testimonials-title {
     font-size: 3.32rem;
+    padding: 0.52rem;
   }
 
   .testimonials-title::after {

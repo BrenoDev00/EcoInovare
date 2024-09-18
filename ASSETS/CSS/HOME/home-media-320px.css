@@ -1,0 +1,11 @@
+@media (max-width: 320px) {
+  /* Seção Principais Serviços */
+  .container-service-information > p {
+    text-align: left;
+  }
+
+  /* Seção Depoimentos */
+  .testimonials-title::after {
+    top: 11rem;
+  }
+}
