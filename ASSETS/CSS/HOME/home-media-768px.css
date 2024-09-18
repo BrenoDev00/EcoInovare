@@ -96,4 +96,15 @@
   .service-image {
     width: 50rem;
   }
+
+  /* Seção Dados Estatísticos */
+  .statistics-data-section {
+    background-position: 50%;
+  }
+
+  .container-statistics-data ul {
+    flex-flow: column;
+    gap: 3.9rem;
+    align-items: center;
+  }
 }

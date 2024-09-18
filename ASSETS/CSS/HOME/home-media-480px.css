@@ -30,9 +30,8 @@
   }
 
   /* Seção Dados Estatísticos */
-  .container-statistics-data ul {
-    flex-flow: column;
-    gap: 3.9rem;
+  .statistics-data-section {
+    background-position: 0%;
   }
 
   /* Seção Diferenciais */
