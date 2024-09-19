@@ -43,19 +43,6 @@
     width: 45rem;
   }
 
-  /* Seção Dados Estatísticos */
-  .statistics-data-section {
-    background-position: 50%;
-  }
-
-  .container-statistics-data ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 3.9rem;
-    padding: 0;
-  }
-
   /* Seção Diferenciais */
   .container-features {
     gap: 7.63rem;
