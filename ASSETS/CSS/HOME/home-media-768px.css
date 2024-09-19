@@ -28,7 +28,7 @@
 
   .navigation-items li:not(:last-child)::after {
     content: "";
-    width: 100vw;
+    width: 100vw !important;
     position: absolute;
     bottom: -3rem;
     left: 50%;
