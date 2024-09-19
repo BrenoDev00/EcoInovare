@@ -43,20 +43,6 @@
     width: 45rem;
   }
 
-  /* Seção Diferenciais */
-  .container-features {
-    gap: 7.63rem;
-  }
-
-  .container-features-cards {
-    flex-wrap: wrap;
-    gap: 6.1rem;
-  }
-
-  .feature-card {
-    position: static;
-  }
-
   /* Seção Depoimentos */
   .testimonials-section {
     padding: 0 !important;
