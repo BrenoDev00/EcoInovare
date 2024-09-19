@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
-  /* .section {
+  .section {
     padding: 3.9rem;
-  } */
+  }
 
   /* Menu de navegação */
   nav {
@@ -9,11 +9,7 @@
     padding: 2rem;
     gap: 2.5rem;
   }
-
-  /* .EcoInovare-logo {
-    width: 20rem;
-  } */
-
+  
   .btn-menu {
     display: inline;
   }
@@ -43,58 +39,8 @@
   }
 
   /* Seção Hero */
-  .hero-section {
-    position: static;
-    height: auto;
-  }
-
-  .top-right-circle,
-  .bottom-left-circle,
-  .overlapping-bottom-left-circle {
-    display: none;
-  }
-
-  .container-hero {
-    flex-flow: column;
-    gap: 3.9rem;
-  }
-
-  .container-hero-information h1,
-  h2,
-  p {
-    text-align: center;
-  }
-
   .hero-illustration {
-    align-self: center;
     width: 45rem;
-  }
-
-  /* Seção Principais Serviços */
-  .main-services-section {
-    margin-top: 3.12rem;
-    position: static;
-  }
-
-  .top-left-circle {
-    display: none;
-  }
-
-  .container-service {
-    flex-flow: column;
-    gap: 4.88rem;
-  }
-
-  .container-img-and-btn-service {
-    align-self: center;
-  }
-
-  .container-img-and-btn-service:nth-child(1) {
-    order: 2;
-  }
-
-  .service-image {
-    width: 50rem;
   }
 
   /* Seção Dados Estatísticos */
