@@ -48,18 +48,8 @@
   }
 
   /* Seção Depoimentos */
-  .testimonials-section {
-    padding: 0;
-    margin-top: 15rem;
-  }
-
-  .testimonials-title {
-    font-size: 3.32rem;
-    padding: 0.52rem;
-  }
-
   .testimonials-title::after {
-    top: 6rem;
+    top: 11rem;
   }
 
   .container-testimonials-carousel {
