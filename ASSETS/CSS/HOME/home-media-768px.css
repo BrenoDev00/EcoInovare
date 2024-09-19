@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
-  .section {
+  /* .section {
     padding: 3.9rem;
-  }
+  } */
 
   /* Menu de navegação */
   nav {
@@ -10,9 +10,9 @@
     gap: 2.5rem;
   }
 
-  .EcoInovare-logo {
+  /* .EcoInovare-logo {
     width: 20rem;
-  }
+  } */
 
   .btn-menu {
     display: inline;
