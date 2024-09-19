@@ -43,30 +43,6 @@
     width: 45rem;
   }
 
-  /* Seção Depoimentos */
-  .testimonials-section {
-    padding: 0 !important;
-    margin-top: 15rem;
-  }
-
-  .testimonials-title {
-    font-size: 3.32rem;
-    padding: 0.52rem;
-  }
-
-  .testimonials-title::after {
-    top: 6rem;
-  }
-
-  .container-testimonials-carousel {
-    width: 68rem;
-  }
-
-  .navigation-auto,
-  .manual-navigation {
-    width: 68rem;
-  }
-
   /* Seção Perguntas Frequentes */
   .frequent-questions-title {
     font-size: 3.32rem;
