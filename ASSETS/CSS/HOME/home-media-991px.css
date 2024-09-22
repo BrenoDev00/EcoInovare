@@ -143,4 +143,36 @@
   .accordion-title {
     text-align: center;
   }
+
+  /* Seção Formulário de Conversão */
+  .container-form-conversion-section {
+    flex-flow: column;
+  }
+
+  .container-title-and-illustration h2,
+  h3 {
+    text-align: left;
+  }
+
+  .container-title {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+  }
+
+  .conversion-form-illustration {
+    width: 45rem;
+  }
+
+  .container-form-group {
+    flex-flow: row wrap;
+  }
+
+  .form-group {
+    flex: 1;
+  }
+
+  .modal-group p {
+    width: max-content;
+  }
 }

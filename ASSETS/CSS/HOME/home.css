@@ -572,6 +572,12 @@ nav {
 .conversion-form {
   display: flex;
   flex-flow: column;
+  gap: 2.7rem;
+}
+
+.container-form-group {
+  display: flex;
+  flex-flow: column;
   gap: 2.5rem;
 }
 
