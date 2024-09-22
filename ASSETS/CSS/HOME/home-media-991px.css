@@ -1,4 +1,8 @@
 @media (max-width: 991px) {
+  html {
+    font-size: 58%;
+  }
+
   .section {
     padding: 4.88rem;
   }
