@@ -43,32 +43,6 @@
     width: 45rem;
   }
 
-  /* Seção Perguntas Frequentes */
-  .frequent-questions-title {
-    font-size: 3.32rem;
-  }
-
-  .frequent-questions-title::after {
-    top: 6rem;
-  }
-
-  .container-accordion-and-illustration {
-    flex-flow: column;
-    gap: 2.5rem;
-  }
-
-  .accordion {
-    flex-basis: auto;
-  }
-
-  .container-accordion-title {
-    gap: 1.6rem;
-  }
-
-  .accordion-title {
-    text-align: center;
-  }
-
   /* Seção Formulário de Conversão */
   .container-form-conversion-section {
     flex-flow: column;
