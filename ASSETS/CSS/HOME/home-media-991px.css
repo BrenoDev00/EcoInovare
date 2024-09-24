@@ -37,7 +37,6 @@
 
   .hero-illustration {
     align-self: center;
-    width: 50rem;
   }
 
   /* Seção Principais Serviços */
@@ -53,6 +52,10 @@
   .container-service {
     flex-flow: column;
     gap: 4.88rem;
+  }
+
+  .container-service-information p {
+    max-width: initial;
   }
 
   .container-img-and-btn-service {
@@ -134,10 +137,6 @@
 
   .accordion {
     flex-basis: auto;
-  }
-
-  .container-accordion-title {
-    gap: 1.6rem;
   }
 
   .accordion-title {

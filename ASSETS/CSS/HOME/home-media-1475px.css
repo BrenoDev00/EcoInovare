@@ -5,6 +5,10 @@
     position: relative;
   }
 
+  .hero-illustration {
+    width: 50rem;
+  }
+
   /* Círculos de fundo da Seção Hero e Seção Principais Serviços */
   .overlapping-bottom-left-circle {
     height: 15rem;
@@ -20,5 +24,20 @@
 
   .top-left-circle {
     clip-path: circle(25rem at 3rem 1rem);
+  }
+
+  /* Seção Principais Serviços */
+  .container-service-information p {
+    max-width: 43rem;
+  }
+
+  /* Seção Diferenciais */
+  .feature-card {
+    padding: 6.1rem 1.6rem;
+  }
+
+  /* Seção Perguntas Frequentes */
+  .container-accordion-title {
+    gap: 1.6rem;
   }
 }
