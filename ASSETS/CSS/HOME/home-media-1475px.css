@@ -1,0 +1,24 @@
+@media (max-width: 1475px) {
+  /* Seção Hero */
+  .hero-section {
+    height: 100vh;
+    position: relative;
+  }
+
+  /* Círculos de fundo da Seção Hero e Seção Principais Serviços */
+  .overlapping-bottom-left-circle {
+    height: 15rem;
+    bottom: 3rem;
+    left: 6rem;
+  }
+
+  .bottom-left-circle,
+  .top-left-circle {
+    height: 30rem;
+    width: 30rem;
+  }
+
+  .top-left-circle {
+    clip-path: circle(25rem at 3rem 1rem);
+  }
+}
