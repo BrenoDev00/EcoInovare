@@ -3,11 +3,15 @@
     padding: 3.9rem;
   }
 
-  /* Menu de navegação */
+  /* Menu de Navegação */
   nav {
     flex-flow: column;
-    padding: 2rem;
+    padding: 1.6rem;
     gap: 2.5rem;
+  }
+
+  .EcoInovare-logo {
+    width: 20rem;
   }
 
   .btn-menu {
