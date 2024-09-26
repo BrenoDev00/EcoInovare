@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scrollbar-color: var(--primary-color-2) var(--gray-color-1);
 }
 
 :root {
