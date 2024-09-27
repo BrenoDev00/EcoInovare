@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.querySelector(".btn-menu");
   const navigationItems = document.querySelector(".navigation-items");
 
-  function showMobileNavigation() {
+  function toggleMenu() {
     menuBtn.addEventListener("click", function () {
       navigationItems.classList.toggle("navigation-open");
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  showMobileNavigation();
+  toggleMenu();
 
   // Seção Depoimentos
   let count = 1;
