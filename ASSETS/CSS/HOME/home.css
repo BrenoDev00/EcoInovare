@@ -120,11 +120,8 @@ nav {
   align-items: center;
   gap: 1.2rem;
   background-color: var(--primary-color-2);
-  margin-top: 2rem;
-}
-
-.btn-learn-more > a {
   color: white;
+  margin-top: 2rem;
 }
 
 .btn-learn-more > img {
