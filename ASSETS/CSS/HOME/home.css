@@ -116,13 +116,19 @@ nav {
 }
 
 .btn-learn-more {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
   background-color: var(--primary-color-2);
   margin-top: 2rem;
 }
 
-.btn-learn-more::after {
-  content: "\1F86A";
-  padding-left: 0.52rem;
+.btn-learn-more > a {
+  color: white;
+}
+
+.btn-learn-more > img {
+  width: 2.5rem;
 }
 
 .btn-learn-more:hover {
