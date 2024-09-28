@@ -301,6 +301,7 @@ nav {
 
 .feature-card h3 {
   color: var(--primary-color-2);
+  text-align: center;
 }
 
 .feature-card p {
