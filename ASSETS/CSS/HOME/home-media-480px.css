@@ -8,6 +8,16 @@
   .testimonials-title::after {
     top: 11rem;
   }
+
+  /* Seção Perguntas Frequentes  */
+  .frequent-questions-illustration {
+    width: 50rem;
+  }
+
+  /* Seção Formulário de Conversão */
+  .conversion-form-illustration {
+    width: 35rem;
+  }
 }
 
 @media (max-width: 480px) {

@@ -29,6 +29,10 @@ html {
   --main-font: "Open Sans", sans-serif;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .section {
   padding: 6.1rem;
   font-family: var(--main-font);
