@@ -20,6 +20,13 @@
   }
 }
 
+@media (max-width: 390px) {
+  /* Seção Depoimentos */
+  .testimonials-title::after {
+    top: 11rem;
+  }
+}
+
 @media (max-width: 480px) {
   html {
     font-size: 50%;
@@ -70,10 +77,6 @@
   }
 
   /* Seção Depoimentos */
-  .testimonials-title::after {
-    top: 11rem;
-  }
-
   .container-testimonials-carousel {
     width: 35rem;
   }
