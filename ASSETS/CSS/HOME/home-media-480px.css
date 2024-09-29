@@ -4,11 +4,6 @@
     text-align: left;
   }
 
-  /* Seção Depoimentos */
-  .testimonials-title::after {
-    top: 11rem;
-  }
-
   /* Seção Perguntas Frequentes  */
   .frequent-questions-illustration {
     width: 50rem;
@@ -17,6 +12,13 @@
   /* Seção Formulário de Conversão */
   .conversion-form-illustration {
     width: 35rem;
+  }
+}
+
+@media (max-width: 332px) {
+  /* Seção Perguntas Frequentes */
+  .frequent-questions-title::after {
+    top: 11rem;
   }
 }
 

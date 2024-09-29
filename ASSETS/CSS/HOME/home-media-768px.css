@@ -1,3 +1,10 @@
+@media (max-width: 633px) {
+  /* Seção Principais Serviços */
+  .main-services-title::after {
+    top: 12rem;
+  }
+}
+
 @media (max-width: 768px) {
   .section {
     padding: 3.9rem;
