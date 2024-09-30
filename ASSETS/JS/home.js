@@ -182,10 +182,18 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         scrollTopBtn.style.display = "none";
       }
+    });
 
-      scrollTopBtn.addEventListener("click", function () {
+    document.addEventListener("touchmove", function (event) {
+      if (event.touches.length > 0) {
+        scrollTopBtn.style.display = "block";
+      } else {
         scrollTopBtn.style.display = "none";
-      });
+      }
+    });
+
+    scrollTopBtn.addEventListener("click", function () {
+      scrollTopBtn.style.display = "none";
     });
   }
 
