@@ -3,7 +3,7 @@
 ![Seção Hero EcoInovare](./ASSETS/IMAGES/HOME/secao_hero_EcoInovare.jpg)
 ## Descrição
 - Website que fornece planos de serviços sustentáveis personalizados para outras empresas.
-## Tecnologias utilizadas:
+## Tecnologias utilizadas
 - HTML5: Estruturação dos elementos do site;
 - CSS3: Estilização do site e responsividade;
 - Javascript: Manipulação do DOM para interatividade de elementos e validações de formulário personalizadas. 
