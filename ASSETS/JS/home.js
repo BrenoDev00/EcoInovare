@@ -171,4 +171,23 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.style.position = "static";
     });
   }
+
+  /* Botão de voltar ao topo da página */
+  const scrollTopBtn = document.querySelector(".btn-back-to-top");
+
+  function toggleScrollBtn() {
+    document.addEventListener("wheel", function (event) {
+      if (event.deltaY > 0) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+
+      scrollTopBtn.addEventListener("click", function () {
+        scrollTopBtn.style.display = "none";
+      });
+    });
+  }
+
+  toggleScrollBtn();
 });
