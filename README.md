@@ -6,7 +6,10 @@
 ## Tecnologias utilizadas
 - HTML5: Estruturação dos elementos do site;
 - CSS3: Estilização do site e responsividade;
-- Javascript: Manipulação do DOM para interatividade de elementos e validações de formulário personalizadas. 
+- Javascript: Manipulação do DOM para interatividade de elementos e validações de formulário personalizadas;
+- Canva: Usado para prototipar seções do site e editar imagens do site; 
+- Google Fonts: API usada para adicionar a fonte Open Sans ao site;
+- Adobe Color: Usado para criar a paleta de cores do site.
 ## Licença
 Este código está licenciado usando a [licença-MIT](./LICENSE).
  
