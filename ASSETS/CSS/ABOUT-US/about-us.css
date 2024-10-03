@@ -43,3 +43,21 @@ nav {
 .navigation-items li:hover {
   transform: scale(1.1);
 }
+
+.navigation-items li:last-child {
+  position: relative;
+}
+
+.navigation-items li:last-child:hover {
+  transform: none;
+}
+
+.navigation-items li:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  border-bottom: 0.3rem solid var(--primary-color-2);
+  border-radius: 1rem;
+  width: 100%;
+}
