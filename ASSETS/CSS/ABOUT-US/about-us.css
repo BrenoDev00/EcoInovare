@@ -1,5 +1,5 @@
 /* Menu de Navegação */
-nav {
+.navigation-menu {
   display: flex;
   justify-content: space-between;
   padding: 0 6.1rem;
@@ -60,4 +60,79 @@ nav {
   border-bottom: 0.3rem solid var(--primary-color-2);
   border-radius: 1rem;
   width: 100%;
+}
+
+/* Conteúdo Principal */
+main {
+  font-family: var(--main-font);
+  padding: 0 6.1rem;
+}
+
+.information-menu {
+  border-bottom: 0.3rem solid var(--gray-color-2);
+  padding-bottom: 3.12rem;
+}
+
+.information-menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.information-menu ul li {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.information-menu ul li:first-child {
+  position: relative;
+}
+
+.information-menu ul li:first-child::after {
+  content: "";
+  position: absolute;
+  bottom: -3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12rem;
+  border-bottom: 0.5rem solid var(--primary-color-3);
+}
+
+.information-menu a {
+  color: var(--primary-color-3);
+}
+
+section {
+  margin-top: 4.88rem;
+}
+
+.container-about-us {
+  display: flex;
+  flex-flow: column;
+  gap: 3.9rem;
+  align-items: center;
+}
+
+.main-title {
+  position: relative;
+  color: var(--primary-color-3);
+  font-size: 3.12rem;
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 0.4rem solid var(--primary-color-4);
+  border-radius: 1rem;
+  width: 60%;
+}
+
+.informative-text {
+  font-size: 1.6rem;
+  max-width: 80%;
+  margin-top: 2rem;
+  text-align: justify;
+  line-height: 1.6;
 }

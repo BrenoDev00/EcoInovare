@@ -1,5 +1,5 @@
 /* Menu de Navegação */
-nav {
+.navigation-menu {
   display: flex;
   justify-content: space-between;
   padding: 0 6.1rem;

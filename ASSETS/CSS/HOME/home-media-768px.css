@@ -11,7 +11,7 @@
   }
 
   /* Menu de Navegação */
-  nav {
+  .navigation-menu {
     flex-flow: column;
     padding: 1.6rem;
     gap: 2.5rem;
