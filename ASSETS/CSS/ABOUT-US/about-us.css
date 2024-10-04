@@ -153,3 +153,90 @@ section {
 .about-us-image {
   width: 50rem;
 }
+
+/* Rodapé */
+.footer {
+  margin-top: 15rem;
+  background-color: var(--primary-color-3);
+  box-shadow: 0rem 0.2rem 2rem 0rem var(--gray-color-3);
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.container-footer h2 {
+  color: white;
+  font-size: 1.92rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  border-left: 0.3rem solid var(--primary-color-1);
+  padding-left: 0.7rem;
+}
+
+.container-footer ul {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+  padding-left: 0.5rem;
+}
+
+.container-footer li,
+.container-footer a {
+  color: var(--gray-color-2);
+  font-size: 1.4rem;
+}
+
+.container-footer a:hover {
+  color: white;
+}
+
+.container-footer li img {
+  width: 3rem;
+  fill: white;
+  stroke: white;
+}
+
+.services,
+.contact,
+.about-us,
+.social-media {
+  display: flex;
+  flex-flow: column;
+  gap: 2.3rem;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.82rem;
+  font-style: normal;
+}
+
+/* Logo do Whatsapp */
+.whatsapp-icon {
+  width: 7.63rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  filter: drop-shadow(0 0 0.75rem var(--primary-color-1));
+  transition: transform 0.3s;
+}
+
+.whatsapp-icon:hover {
+  transform: translateY(-1rem);
+}
+
+/* Botão de voltar ao topo da página */
+.btn-back-to-top {
+  position: fixed;
+  bottom: 12rem;
+  right: 2rem;
+  display: none;
+}
+
+.btn-back-to-top img {
+  width: 6.1rem;
+}
