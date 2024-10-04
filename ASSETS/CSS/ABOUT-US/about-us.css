@@ -81,6 +81,11 @@ main {
 .information-menu ul li {
   font-size: 2.3rem;
   font-weight: 500;
+  transition: 0.3s;
+}
+
+.information-menu ul li:not(:first-child):hover {
+  transform: scale(1.1);
 }
 
 .information-menu ul li:first-child {
@@ -130,9 +135,21 @@ section {
 }
 
 .informative-text {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   max-width: 80%;
   margin-top: 2rem;
   text-align: justify;
   line-height: 1.6;
+}
+
+.informative-text b {
+  color: var(--primary-color-3);
+}
+
+.informative-text::first-letter {
+  font-size: 2.5rem;
+}
+
+.about-us-image {
+  width: 50rem;
 }
