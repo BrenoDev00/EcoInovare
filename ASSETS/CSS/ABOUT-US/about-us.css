@@ -91,7 +91,8 @@ main {
   left: 50%;
   transform: translateX(-50%);
   width: 12rem;
-  border-bottom: 0.5rem solid var(--primary-color-3);
+  border: 0.3rem solid var(--primary-color-3);
+  border-radius: 0.5rem;
 }
 
 .information-menu ul li:not(:first-child)::after {
@@ -104,6 +105,17 @@ main {
 
 .btn-about-us {
   color: var(--primary-color-3);
+}
+
+.border-bottom {
+  display: none;
+  width: 12.7rem;
+  border: 0.3rem solid var(--primary-color-3);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 section {
