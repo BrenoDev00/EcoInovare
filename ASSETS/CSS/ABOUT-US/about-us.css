@@ -109,13 +109,13 @@ main {
 
 .border-bottom {
   display: none;
-  width: 12.7rem;
-  border: 0.3rem solid var(--primary-color-3);
-  border-radius: 0.5rem;
   position: absolute;
   bottom: -3.2rem;
   left: 50%;
   transform: translateX(-50%);
+  width: 12.7rem;
+  border: 0.3rem solid var(--primary-color-3);
+  border-radius: 0.5rem;
 }
 
 section {

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       containerAboutUs.innerHTML =
         "<h1 class='main-title'><strong>Nossa Visão</strong></h1><p class='informative-text'> Ser <b>referência global em soluções ecológicas para empresas</b>, promovendo uma transformação sustentável que impacte positivamente o meio ambiente e a sociedade. Almejamos um futuro onde todas as empresas integrem <b>práticas sustentáveis em suas operações</b>, tornando o desenvolvimento econômico um aliado da preservação ambiental. Queremos liderar essa mudança, inspirando ações conscientes e colaborativas que moldem um mundo mais verde, próspero e equilibrado. </p> <img class='about-us-image' src='/ASSETS/IMAGES/ABOUT-US/imagem-visao.png' alt='Imagem de documentos e materiais de escritório sobre uma mesa.'/>;";
 
-      borderBottom[1].style.display = "block";
+      borderBottom[0].style.display = "block";
     });
   }
 
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       containerAboutUs.innerHTML =
         "<h1 class='main-title'><strong>Nossos Valores</strong></h1><p class='informative-text'> Nossos valores refletem o compromisso com a sustentabilidade e a ética em cada passo que damos. Acreditamos na <b>responsabilidade ambiental</b> como princípio fundamental, priorizando soluções que respeitem e protejam o meio ambiente. Valorizamos a <b>inovação</b>, buscando constantemente novas tecnologias e abordagens que promovam práticas sustentáveis e eficientes. Nossa relação com clientes e parceiros é guiada pela <b>transparência</b>, garantindo comunicação aberta e honesta em todas as etapas. Também acreditamos na <b>colaboração</b>, sabendo que o trabalho em conjunto é essencial para gerar mudanças positivas e duradouras. </p> <img class='about-us-image' src='/ASSETS/IMAGES/ABOUT-US/imagem-valores.png' alt='Imagem de colaboradores de uma empresa reunidos juntando as mãos.'/>;";
 
-      borderBottom[2].style.display = "block";
+      borderBottom[1].style.display = "block";
     });
   }
 
