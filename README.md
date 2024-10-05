@@ -9,7 +9,8 @@
 - Javascript: Manipulação do DOM para interatividade de elementos e validações de formulário personalizadas;
 - Canva: Usado para prototipar seções do site e editar imagens do site; 
 - Google Fonts: API usada para adicionar a fonte Open Sans ao site;
-- Adobe Color: Usado para criar a paleta de cores do site.
+- Adobe Color: Usado para criar a paleta de cores do site;
+- Netlify: usado para hospedar o site.
 ## Licença
 Este código está licenciado usando a [licença-MIT](./LICENSE).
  
