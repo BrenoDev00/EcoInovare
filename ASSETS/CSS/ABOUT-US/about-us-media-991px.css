@@ -1,8 +1,4 @@
 @media (max-width: 991px) and (orientation: landscape) {
-  html {
-    font-size: 58%;
-  }
-
   /* Menu de Navegação */
   .navigation-menu {
     flex-flow: column;
@@ -40,5 +36,11 @@
     display: flex;
     flex-flow: column;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 58%;
   }
 }
