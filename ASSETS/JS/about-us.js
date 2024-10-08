@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
       navigationItems.classList.toggle("navigation-open");
 
       if (navigationItems.classList.contains("navigation-open")) {
-        menuBtn.src = "ASSETS/IMAGES/HOME/icone-fechar-menu-hamburguer.svg";
+        menuBtn.src = "/ASSETS/IMAGES/HOME/icone-fechar-menu-hamburguer.svg";
       } else {
-        menuBtn.src = "ASSETS/IMAGES/HOME/icone-menu-hamburguer.svg";
+        menuBtn.src = "/ASSETS/IMAGES/HOME/icone-menu-hamburguer.svg";
       }
     });
   }
