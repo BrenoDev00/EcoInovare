@@ -22,6 +22,10 @@
     position: relative;
   }
 
+  .navigation-items li:hover {
+    transform: none;
+  }
+
   .navigation-items li:not(:last-child)::after {
     content: "";
     width: 100vw !important;
