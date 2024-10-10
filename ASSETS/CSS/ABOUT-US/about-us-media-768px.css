@@ -56,4 +56,8 @@
     bottom: -3.9rem;
     width: 10rem;
   }
+
+  .informative-text {
+    max-width: 100%;
+  }
 }
