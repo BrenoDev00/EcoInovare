@@ -49,4 +49,11 @@
     flex-flow: column;
     margin-bottom: 1rem;
   }
+
+  /* Conteúdo Principal */
+  .information-menu ul li::after,
+  .border-bottom {
+    bottom: -3.9rem;
+    width: 10rem;
+  }
 }
