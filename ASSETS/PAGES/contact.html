@@ -64,59 +64,74 @@
         <h1 class="main-title">Entre em Contato</h1>
       </div>
 
-      <section class="section contact-form-section">
-        <form id="contact-form" action="#">
-          <div class="contact-form-title">
-            <h2>Envie uma mensagem</h2>
-          </div>
-
-          <div class="container-form-field">
-            <div class="form-group">
-              <label for="name">Nome</label>
-
-              <input type="text" id="name" placeholder="*Seu nome" />
+      <div class="container-main-content">
+        <section class="section contact-form-section">
+          <form id="contact-form" action="#">
+            <div class="contact-form-title">
+              <h2>Envie uma mensagem</h2>
             </div>
 
-            <div class="form-group">
-              <label for="company">Empresa</label>
+            <div class="container-form-field">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="*Seu nome" />
+              </div>
 
-              <input type="text" id="company" placeholder="*Nome da empresa" />
-            </div>
-          </div>
-
-          <div class="container-form-field">
-            <div class="form-group">
-              <label for="phone">Telefone</label>
-
-              <input
-                type="text"
-                id="phone"
-                placeholder="*(00)0000-0000"
-                maxlength="15"
-              />
+              <div class="form-group">
+                <label for="company">Empresa</label>
+                <input
+                  type="text"
+                  id="company"
+                  placeholder="*Nome da empresa"
+                />
+              </div>
             </div>
 
-            <div class="form-group">
-              <label for="email">E-mail</label>
+            <div class="container-form-field">
+              <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="*(00)0000-0000"
+                  maxlength="15"
+                />
+              </div>
 
-              <input type="email" id="email" placeholder="*Seu melhor E-mail" />
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="*Seu melhor E-mail"
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="container-text-area">
-            <label for="something-else">Algo mais</label>
+            <div class="container-text-area">
+              <label for="something-else">Algo mais</label>
+              <textarea
+                id="something-else"
+                cols="30"
+                rows="8"
+                placeholder="Máx.: 200 caracteres"
+              ></textarea>
+            </div>
 
-            <textarea
-              id="something-else"
-              cols="30"
-              rows="8"
-              placeholder="Máx.: 200 caracteres"
-            ></textarea>
-          </div>
+            <button type="submit" class="btn btn-submit-form">Enviar</button>
+          </form>
+        </section>
 
-          <button type="submit" class="btn btn-submit-form">Enviar</button>
-        </form>
-      </section>
+        <div class="container-contact-and-map">
+          <!-- Seção Informações de Contato -->
+          <section class="section contact-information-section">
+            Contato aqui
+          </section>
+
+          <!-- Seção Mapa de Localização -->
+          <div class="section map-location-section">Mapa aqui</div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

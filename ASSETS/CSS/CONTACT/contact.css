@@ -95,6 +95,12 @@ main {
   transform: translateX(-50%);
 }
 
+.container-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Seção Formulário de Contato */
 #contact-form {
   padding: 2rem;
@@ -163,4 +169,14 @@ textarea {
 
 .btn-submit-form:hover {
   box-shadow: 0rem 0rem 3rem 0rem var(--gray-color-2);
+}
+
+/* Seção Informações de Contato */
+.contact-information-section {
+  border: 0.1rem solid black;
+}
+
+/* Seção Mapa de Localização */
+.map-location-section {
+  border: 0.1rem solid black;
 }
