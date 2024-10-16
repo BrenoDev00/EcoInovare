@@ -1,0 +1,63 @@
+/* Menu de Navegação */
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6.1rem;
+  border-bottom: 0.1rem solid var(--primary-color-2);
+}
+
+.container-logo-and-mobile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.EcoInovare-logo {
+  width: 25rem;
+  padding: 0.52rem 0 0.52rem 0;
+}
+
+.btn-menu {
+  display: none;
+  width: 3.9rem;
+  margin-right: 2rem;
+}
+
+.navigation-items {
+  display: flex;
+  align-items: center;
+  gap: 4.88rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--main-font);
+}
+
+.navigation-items li a {
+  color: var(--primary-color-3);
+}
+
+.navigation-items li {
+  transition: 0.2s;
+}
+
+.navigation-items li:hover {
+  transform: scale(1.1);
+}
+
+.navigation-items li:last-child {
+  position: relative;
+}
+
+.navigation-items li:last-child:hover {
+  transform: none;
+}
+
+.navigation-items li:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  border-bottom: 0.3rem solid var(--primary-color-2);
+  border-radius: 1rem;
+  width: 100%;
+}
