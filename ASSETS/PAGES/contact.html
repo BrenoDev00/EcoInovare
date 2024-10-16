@@ -63,6 +63,58 @@
       <div class="container-main-title">
         <h1 class="main-title">Entre em Contato</h1>
       </div>
+
+      <section class="section contact-form-section">
+        <h2>Envie uma mensagem</h2>
+
+        <form id="contact-form" action="#">
+          <div class="container-form-field">
+            <div class="form-group">
+              <label for="name">Nome</label>
+
+              <input type="text" id="name" placeholder="*Seu nome" />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Empresa</label>
+
+              <input type="text" id="company" placeholder="*Nome da empresa" />
+            </div>
+          </div>
+
+          <div class="container-form-field">
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+
+              <input
+                type="text"
+                id="phone"
+                placeholder="*(00)0000-0000"
+                maxlength="15"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+
+              <input type="email" id="email" placeholder="*Seu melhor E-mail" />
+            </div>
+          </div>
+
+          <div class="container-form-field">
+            <label for="something-else">Algo mais</label>
+
+            <textarea
+              id="something-else"
+              cols="30"
+              rows="8"
+              placeholder="Máx.: 200 caracteres"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit-form">Enviar</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>
