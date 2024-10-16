@@ -94,3 +94,69 @@ main {
   border-bottom: 0.4rem solid var(--primary-color-4);
   transform: translateX(-50%);
 }
+
+/* Seção Formulário de Contato */
+#contact-form {
+  padding: 2rem;
+  border: 0.1rem solid var(--primary-color-3);
+  border-radius: 0.8rem;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  gap: 2.5rem;
+}
+
+.contact-form-title {
+  border-left: 0.4rem solid var(--primary-color-4);
+  border-radius: 0.3rem;
+}
+
+.contact-form-title h2 {
+  font-size: 2rem;
+  margin-left: 0.6rem;
+}
+
+.container-form-field {
+  display: flex;
+  gap: 2rem;
+}
+
+.container-text-area {
+  display: flex;
+  flex-flow: column;
+  gap: 0.82rem;
+}
+
+.container-text-area label {
+  font-size: 1.92rem;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column;
+  gap: 0.82rem;
+}
+
+.form-group label,
+input,
+textarea {
+  font-family: var(--main-font);
+  font-size: 1.92rem;
+}
+
+.form-group input,
+textarea {
+  border-radius: 2rem;
+  border: 0.1rem solid var(--gray-color-2);
+  padding: 0.42rem 1.2rem;
+  background-color: var(--gray-color-1);
+  outline: none;
+  resize: none;
+  text-align: justify;
+}
+
+.btn-submit-form {
+  border: none;
+  background-color: var(--primary-color-4);
+  color: white;
+}
