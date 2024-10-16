@@ -61,3 +61,36 @@
   border-radius: 1rem;
   width: 100%;
 }
+
+/* Conteúdo Principal */
+main {
+  font-family: var(--main-font);
+  padding: 3.12rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.container-main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  position: relative;
+  font-size: 3.12rem;
+  color: var(--primary-color-3);
+  text-align: center;
+}
+
+.main-title::after {
+  position: absolute;
+  content: "";
+  bottom: -1.6rem;
+  left: 50%;
+  width: 60%;
+  border-radius: 1rem;
+  border-bottom: 0.4rem solid var(--primary-color-4);
+  transform: translateX(-50%);
+}
