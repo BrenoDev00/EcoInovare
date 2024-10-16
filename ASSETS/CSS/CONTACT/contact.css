@@ -160,3 +160,7 @@ textarea {
   background-color: var(--primary-color-4);
   color: white;
 }
+
+.btn-submit-form:hover {
+  box-shadow: 0rem 0rem 3rem 0rem var(--gray-color-2);
+}
