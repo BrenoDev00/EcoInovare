@@ -96,10 +96,11 @@ main {
 }
 
 .container-main-content {
+  margin: 0 auto;
   margin-top: 6.1rem;
+  max-width: 120rem;
   display: flex;
   gap: 3.12rem;
-  padding: 0 9.54rem 0 9.54rem;
 }
 
 /* Seção Formulário de Contato */
@@ -176,10 +177,6 @@ textarea {
 
 .btn-submit-form:hover {
   box-shadow: 0rem 0rem 3rem 0rem var(--gray-color-2);
-}
-
-.container-contact-and-map {
-  flex: 1;
 }
 
 /* Seção Informações de Contato */
