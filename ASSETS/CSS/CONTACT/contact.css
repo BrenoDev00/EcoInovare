@@ -97,11 +97,14 @@ main {
 
 .container-main-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* Seção Formulário de Contato */
+.contact-form-section {
+  padding: 0;
+}
+
 #contact-form {
   padding: 2rem;
   border: 0.1rem solid var(--primary-color-3);
@@ -173,7 +176,26 @@ textarea {
 
 /* Seção Informações de Contato */
 .contact-information-section {
+  padding: 0;
   border: 0.1rem solid black;
+}
+
+.container-contact-information {
+  display: flex;
+  flex-flow: column;
+}
+
+address {
+  display: flex;
+  flex-flow: column;
+  gap: 0.2rem;
+}
+
+.location,
+.phone,
+.mail {
+  display: flex;
+  align-items: center;
 }
 
 svg {
@@ -182,5 +204,6 @@ svg {
 
 /* Seção Mapa de Localização */
 .map-location-section {
+  padding: 0;
   border: 0.1rem solid black;
 }
