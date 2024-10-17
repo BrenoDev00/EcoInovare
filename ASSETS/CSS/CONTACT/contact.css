@@ -176,6 +176,10 @@ textarea {
   border: 0.1rem solid black;
 }
 
+svg {
+  width: 5rem;
+}
+
 /* Seção Mapa de Localização */
 .map-location-section {
   border: 0.1rem solid black;
