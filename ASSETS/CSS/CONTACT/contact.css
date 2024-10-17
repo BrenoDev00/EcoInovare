@@ -44,15 +44,15 @@
   transform: scale(1.1);
 }
 
-.navigation-items li:last-child {
+.navigation-items li:nth-child(2) {
   position: relative;
 }
 
-.navigation-items li:last-child:hover {
+.navigation-items li:nth-child(2):hover {
   transform: none;
 }
 
-.navigation-items li:last-child::after {
+.navigation-items li:nth-child(2)::after {
   content: "";
   position: absolute;
   bottom: -1rem;
