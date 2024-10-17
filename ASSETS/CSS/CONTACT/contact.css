@@ -99,7 +99,7 @@ main {
   margin-top: 6.1rem;
   display: flex;
   gap: 3.12rem;
-  padding: 0 4.88rem 0 4.88rem;
+  padding: 0 9.54rem 0 9.54rem;
 }
 
 /* Seção Formulário de Contato */
@@ -144,6 +144,7 @@ main {
 }
 
 .form-group {
+  flex: 1;
   display: flex;
   flex-flow: column;
   gap: 0.82rem;
