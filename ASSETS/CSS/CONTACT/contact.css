@@ -111,7 +111,7 @@ main {
 
 #contact-form {
   padding: 2rem;
-  border: 0.1rem solid var(--primary-color-3);
+  border: 0.1rem solid var(--primary-color-2);
   border-radius: 0.8rem;
   background-color: white;
   display: flex;
@@ -179,12 +179,18 @@ textarea {
   box-shadow: 0rem 0rem 3rem 0rem var(--gray-color-2);
 }
 
+.container-contact-and-map {
+  display: flex;
+  flex-flow: column;
+  gap: 3.12rem;
+}
+
 /* Seção Informações de Contato */
 .contact-information-section {
   background-color: white;
   padding: 2rem;
   border-radius: 0.8rem;
-  border: 0.1rem solid black;
+  border: 0.1rem solid var(--primary-color-2);
 }
 
 .container-contact-information {
@@ -213,15 +219,15 @@ address {
 .bg-image {
   border-radius: 50%;
   background-color: var(--primary-color-3);
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .bg-image img {
-  width: 3.5rem;
+  width: 3rem;
 }
 
 address p {
-  font-size: 1.92rem;
+  font-size: 1.6rem;
 }
 
 .location,
@@ -247,5 +253,13 @@ address p {
 /* Seção Mapa de Localização */
 .map-location-section {
   padding: 0;
-  border: 0.1rem solid black;
+  border-radius: 0.8rem;
+  border: 0.1rem solid var(--primary-color-2);
+}
+
+.map {
+  border: none;
+  border-radius: 0.8rem;
+  height: 40rem;
+  width: 60rem;
 }
