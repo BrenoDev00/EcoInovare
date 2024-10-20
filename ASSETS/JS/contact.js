@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Conteúdo Principal
+
+  // Validação de formulário utilizando orientação a objetos
+  class Form {
+    constructor(contactForm) {
+      this.contactForm = contactForm;
+    }
+
+    preventDefault() {
+      console.log("novo teste");
+    }
+  }
+
+  let form = document.getElementById("contact-form");
+
+  const contactForm = new Form(form);
+
+  contactForm.preventDefault();
+
   // Botão de voltar ao topo da página
   const scrollTopBtn = document.querySelector(".btn-back-to-top");
 
