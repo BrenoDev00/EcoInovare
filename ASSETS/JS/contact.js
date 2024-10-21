@@ -24,6 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
+    formatNameField() {
+      this.requiredFields[0].addEventListener("input", function (event) {
+        let value = event.target.value.replace(/[^A-Za-zÀ-ÖØ-öø-ÿ' -]/g, "");
+        event.target.value = value;
+      });
+    }
+
     validateCompanyField() {
       try {
         if (this.requiredFields[1].value.trim() === "") {
@@ -76,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     validateFormInRealTime() {
+      this.formatNameField();
       this.formatPhoneNumberField();
     }
 
