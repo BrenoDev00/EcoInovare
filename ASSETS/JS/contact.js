@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.contactForm = contactForm;
       this.requiredFields = document.querySelectorAll(".required-field");
       this.errorMessages = document.querySelectorAll(".error-message");
+      this.emailRegex =
+        /^([a-z]){1,}([a-z0-9._-]){1,}([@]){1}([a-z]){2,}([.]){1}([a-z]){2,}([.]?){1}([a-z]?){2,}$/i;
     }
 
     validateNameField() {
@@ -58,6 +60,21 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
+    validateEmailField() {
+      const emailField = this.requiredFields[3].value.trim();
+
+      try {
+        if (this.emailRegex.test(emailField)) {
+          this.errorMessages[3].style.display = "none";
+        } else {
+          throw "Informe um e-mail válido";
+        }
+      } catch (error) {
+        this.errorMessages[3].style.display = "inline";
+        this.errorMessages[3].textContent = error;
+      }
+    }
+
     validateFormInRealTime() {
       this.formatPhoneNumberField();
     }
@@ -68,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         this.validateNameField();
         this.validateCompanyField();
         this.validatePhoneNumberField();
+        this.validateEmailField();
       });
     }
   }
