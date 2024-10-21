@@ -48,7 +48,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    preventDefault() {
+    formatPhoneNumberField() {
+      this.requiredFields[2].addEventListener("input", function (event) {
+        let value = event.target.value.replace(/\D/g, "");
+        value = value.replace(/^(\d{2})(\d)/g, "($1) $2");
+        value = value.replace(/(\d)(\d{4})$/, "$1-$2");
+
+        event.target.value = value;
+      });
+    }
+
+    validateFormInRealTime() {
+      this.formatPhoneNumberField();
+    }
+
+    validateFormAfterSubmission() {
       this.contactForm.addEventListener("submit", (event) => {
         event.preventDefault();
         this.validateNameField();
@@ -60,7 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const contactForm = new Form(document.getElementById("contact-form"));
 
-  contactForm.preventDefault();
+  contactForm.validateFormAfterSubmission();
+  contactForm.validateFormInRealTime();
 
   // Botão de voltar ao topo da página
   const scrollTopBtn = document.querySelector(".btn-back-to-top");
