@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    validateFormInRealTime() {
+    formatFormInRealTime() {
       this.formatNameField();
       this.formatPhoneNumberField();
     }
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactForm = new Form(document.getElementById("contact-form"));
 
   contactForm.validateFormAfterSubmission();
-  contactForm.validateFormInRealTime();
+  contactForm.formatFormInRealTime();
 
   // Botão de voltar ao topo da página
   const scrollTopBtn = document.querySelector(".btn-back-to-top");
