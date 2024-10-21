@@ -169,6 +169,13 @@ textarea {
   text-align: justify;
 }
 
+.error-message {
+  color: var(--alert-color);
+  font-size: 1.6rem;
+  margin-left: 0.82rem;
+  display: none;
+}
+
 .btn-submit-form {
   border: none;
   background-color: var(--primary-color-4);

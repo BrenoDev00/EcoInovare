@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     preventDefault() {
-      console.log("novo teste");
+      this.contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+      });
     }
   }
 
-  let form = document.getElementById("contact-form");
-
-  const contactForm = new Form(form);
+  const contactForm = new Form(document.getElementById("contact-form"));
 
   contactForm.preventDefault();
 
