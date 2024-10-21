@@ -5,18 +5,31 @@ document.addEventListener("DOMContentLoaded", function () {
   class Form {
     constructor(contactForm) {
       this.contactForm = contactForm;
+      this.requiredFields = document.querySelectorAll(".required-field");
+      this.errorMessages = document.querySelectorAll(".error-message");
     }
 
-    preventDefault() {
-      this.contactForm.addEventListener("submit", function (event) {
+    validateNameField() {
+      this.contactForm.addEventListener("submit", (event) => {
         event.preventDefault();
+
+        try {
+          if (this.requiredFields[0].value.trim().length < 3) {
+            throw "Mínimo 3 caracteres";
+          } else {
+            this.errorMessages[0].style.display = "none";
+          }
+        } catch (error) {
+          this.errorMessages[0].style.display = "inline";
+          this.errorMessages[0].textContent = error;
+        }
       });
     }
   }
 
   const contactForm = new Form(document.getElementById("contact-form"));
 
-  contactForm.preventDefault();
+  contactForm.validateNameField();
 
   // Botão de voltar ao topo da página
   const scrollTopBtn = document.querySelector(".btn-back-to-top");
