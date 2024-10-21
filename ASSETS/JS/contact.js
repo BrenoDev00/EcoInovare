@@ -25,11 +25,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     }
+
+    validateCompanyField() {
+      this.contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        try {
+          if (this.requiredFields[1].value.trim() === "") {
+            throw "Informe o nome da empresa";
+          } else {
+            this.errorMessages[1].style.display = "none";
+          }
+        } catch (error) {
+          this.errorMessages[1].style.display = "inline";
+          this.errorMessages[1].textContent = error;
+        }
+      });
+    }
   }
 
   const contactForm = new Form(document.getElementById("contact-form"));
 
   contactForm.validateNameField();
+  contactForm.validateCompanyField();
 
   // Botão de voltar ao topo da página
   const scrollTopBtn = document.querySelector(".btn-back-to-top");
