@@ -10,44 +10,57 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     validateNameField() {
-      this.contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        try {
-          if (this.requiredFields[0].value.trim().length < 3) {
-            throw "Mínimo 3 caracteres";
-          } else {
-            this.errorMessages[0].style.display = "none";
-          }
-        } catch (error) {
-          this.errorMessages[0].style.display = "inline";
-          this.errorMessages[0].textContent = error;
+      try {
+        if (this.requiredFields[0].value.trim().length < 3) {
+          throw "Mínimo 3 caracteres";
+        } else {
+          this.errorMessages[0].style.display = "none";
         }
-      });
+      } catch (error) {
+        this.errorMessages[0].style.display = "inline";
+        this.errorMessages[0].textContent = error;
+      }
     }
 
     validateCompanyField() {
+      try {
+        if (this.requiredFields[1].value.trim() === "") {
+          throw "Informe o nome da empresa";
+        } else {
+          this.errorMessages[1].style.display = "none";
+        }
+      } catch (error) {
+        this.errorMessages[1].style.display = "inline";
+        this.errorMessages[1].textContent = error;
+      }
+    }
+
+    validatePhoneNumberField() {
+      try {
+        if (this.requiredFields[2].value.length < 14) {
+          throw "Informe o número de telefone";
+        } else {
+          this.errorMessages[2].style.display = "none";
+        }
+      } catch (error) {
+        this.errorMessages[2].style.display = "inline";
+        this.errorMessages[2].textContent = error;
+      }
+    }
+
+    preventDefault() {
       this.contactForm.addEventListener("submit", (event) => {
         event.preventDefault();
-
-        try {
-          if (this.requiredFields[1].value.trim() === "") {
-            throw "Informe o nome da empresa";
-          } else {
-            this.errorMessages[1].style.display = "none";
-          }
-        } catch (error) {
-          this.errorMessages[1].style.display = "inline";
-          this.errorMessages[1].textContent = error;
-        }
+        this.validateNameField();
+        this.validateCompanyField();
+        this.validatePhoneNumberField();
       });
     }
   }
 
   const contactForm = new Form(document.getElementById("contact-form"));
 
-  contactForm.validateNameField();
-  contactForm.validateCompanyField();
+  contactForm.preventDefault();
 
   // Botão de voltar ao topo da página
   const scrollTopBtn = document.querySelector(".btn-back-to-top");
