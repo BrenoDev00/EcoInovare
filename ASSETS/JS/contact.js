@@ -2,13 +2,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // Conteúdo Principal
 
   // Validação de formulário utilizando orientação a objetos
+  class Modal {
+    constructor(feedbackModal) {
+      this.feedbackModal = feedbackModal;
+    }
+
+    showModal() {
+      this.feedbackModal.showModal();
+    }
+  }
+
   class Form {
     constructor(contactForm) {
       this.contactForm = contactForm;
       this.requiredFields = document.querySelectorAll(".required-field");
+      this.textArea = document.getElementById("something-else");
       this.errorMessages = document.querySelectorAll(".error-message");
       this.emailRegex =
         /^([a-z]){1,}([a-z0-9._-]){1,}([@]){1}([a-z]){2,}([.]){1}([a-z]){2,}([.]?){1}([a-z]?){2,}$/i;
+      this.feedbackModal = new Modal(
+        document.getElementById("contact-form-modal")
+      );
     }
 
     validateNameField() {
@@ -87,6 +101,27 @@ document.addEventListener("DOMContentLoaded", function () {
       this.formatPhoneNumberField();
     }
 
+    clearContactFormFields() {
+      this.requiredFields.map((requiredField) => {
+        requiredField.value = "";
+        this.textArea.value = "";
+      });
+    }
+
+    showFeedbackModal() {
+      if (
+        this.requiredFields[0].value.trim().length >= 3 &&
+        this.requiredFields[1].value.trim() !== "" &&
+        this.requiredFields[2].value.length >= 14 &&
+        this.emailRegex.test(this.requiredFields[3].value.trim())
+      ) {
+        this.feedbackModal.showModal();
+        document.style.position = "fixed";
+
+        this.clearContactFormFields();
+      }
+    }
+
     validateFormAfterSubmission() {
       this.contactForm.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -94,14 +129,15 @@ document.addEventListener("DOMContentLoaded", function () {
         this.validateCompanyField();
         this.validatePhoneNumberField();
         this.validateEmailField();
+        this.showFeedbackModal();
       });
     }
   }
 
   const contactForm = new Form(document.getElementById("contact-form"));
 
-  contactForm.validateFormAfterSubmission();
   contactForm.formatFormInRealTime();
+  contactForm.validateFormAfterSubmission();
 
   // Botão de voltar ao topo da página
   const scrollTopBtn = document.querySelector(".btn-back-to-top");
