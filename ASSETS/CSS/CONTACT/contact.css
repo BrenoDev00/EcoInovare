@@ -186,6 +186,67 @@ textarea {
   box-shadow: 0rem 0rem 3rem 0rem var(--gray-color-2);
 }
 
+/* Modal após envio de formulário */
+.contact-form-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.5rem;
+  border: none;
+  border-radius: 1.2rem;
+  box-shadow: 0rem 0.2rem 1rem 0rem var(--gray-color-2);
+  opacity: 0;
+  transition: opacity 0.7s, display 0.7s;
+}
+
+.contact-form-modal[open] {
+  opacity: 1;
+}
+
+.contact-form-modal::backdrop {
+  backdrop-filter: blur(0.8rem);
+}
+
+/* ------ Animação de modal ------*/
+@starting-style {
+  .contact-form-modal[open] {
+    opacity: 0;
+  }
+}
+
+.modal-icon-background {
+  border: 0.2rem solid var(--primary-color-2);
+  border-radius: 50%;
+  width: 8rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.modal-icon {
+  width: 8rem;
+}
+
+.modal-group {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.modal-group p {
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--primary-color-3);
+}
+
+.btn-close-modal {
+  background-color: var(--primary-color-2);
+  color: white;
+  border: none;
+}
+
 .container-contact-and-map {
   display: flex;
   flex-flow: column;
