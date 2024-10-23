@@ -5,10 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
   class Modal {
     constructor(feedbackModal) {
       this.feedbackModal = feedbackModal;
+      this.btnCloseModal = document.getElementById("btn-close-modal");
     }
 
     showModal() {
       this.feedbackModal.showModal();
+    }
+
+    closeModal() {
+      this.feedbackModal.close();
     }
   }
 
@@ -102,10 +107,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     clearContactFormFields() {
-      this.requiredFields.map((requiredField) => {
-        requiredField.value = "";
-        this.textArea.value = "";
-      });
+      this.requiredFields[0].value = "";
+      this.requiredFields[1].value = "";
+      this.requiredFields[2].value = "";
+      this.requiredFields[3].value = "";
+      this.textArea.value = "";
     }
 
     showFeedbackModal() {
@@ -116,10 +122,27 @@ document.addEventListener("DOMContentLoaded", function () {
         this.emailRegex.test(this.requiredFields[3].value.trim())
       ) {
         this.feedbackModal.showModal();
-        document.style.position = "fixed";
+        document.body.style.position = "fixed";
 
         this.clearContactFormFields();
       }
+    }
+
+    preventEscKeyFunctionality() {
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+        }
+      });
+    }
+
+    closeFeedbackModal() {
+      this.preventEscKeyFunctionality();
+
+      this.feedbackModal.btnCloseModal.addEventListener("click", () => {
+        this.feedbackModal.closeModal();
+        document.body.style.position = "static";
+      });
     }
 
     validateFormAfterSubmission() {
@@ -130,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
         this.validatePhoneNumberField();
         this.validateEmailField();
         this.showFeedbackModal();
+        this.closeFeedbackModal();
       });
     }
   }
