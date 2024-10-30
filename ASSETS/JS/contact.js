@@ -36,10 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
           throw new Error("Mínimo 3 caracteres");
         } else {
           this.errorMessages[0].style.display = "none";
+          this.requiredFields[0].style.border =
+            "0.1rem solid var(--gray-color-2)";
         }
       } catch (error) {
         this.errorMessages[0].style.display = "inline";
         this.errorMessages[0].textContent = error.message;
+        this.requiredFields[0].style.border = "0.1rem solid var(--alert-color)";
       }
     }
 
@@ -56,10 +59,13 @@ document.addEventListener("DOMContentLoaded", function () {
           throw new Error("Informe o nome da empresa");
         } else {
           this.errorMessages[1].style.display = "none";
+          this.requiredFields[1].style.border =
+            "0.1rem solid var(--gray-color-2)";
         }
       } catch (error) {
         this.errorMessages[1].style.display = "inline";
         this.errorMessages[1].textContent = error.message;
+        this.requiredFields[1].style.border = "0.1rem solid var(--alert-color)";
       }
     }
 
@@ -69,10 +75,13 @@ document.addEventListener("DOMContentLoaded", function () {
           throw new Error("Informe o número de telefone");
         } else {
           this.errorMessages[2].style.display = "none";
+          this.requiredFields[2].style.border =
+            "0.1rem solid var(--gray-color-2)";
         }
       } catch (error) {
         this.errorMessages[2].style.display = "inline";
         this.errorMessages[2].textContent = error.message;
+        this.requiredFields[2].style.border = "0.1rem solid var(--alert-color)";
       }
     }
 
@@ -87,17 +96,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     validateEmailField() {
-      const emailField = this.requiredFields[3].value.trim();
+      const emailField = this.requiredFields[3];
+      const emailFieldValue = this.requiredFields[3].value.trim();
 
       try {
-        if (this.emailRegex.test(emailField)) {
+        if (this.emailRegex.test(emailFieldValue)) {
           this.errorMessages[3].style.display = "none";
+          emailField.style.border = "0.1rem solid var(--gray-color-2)";
         } else {
           throw new Error("Informe um e-mail válido");
         }
       } catch (error) {
         this.errorMessages[3].style.display = "inline";
         this.errorMessages[3].textContent = error.message;
+        emailField.style.border = "0.1rem solid var(--alert-color)";
       }
     }
 
