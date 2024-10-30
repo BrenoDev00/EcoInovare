@@ -19,4 +19,14 @@
     margin: 0;
     margin-left: 5rem;
   }
+
+  /* Seção Mapa de Localização */
+  .map-location-section {
+    display: flex;
+  }
+
+  .map-location-section iframe {
+    width: auto;
+    flex: 1;
+  }
 }
