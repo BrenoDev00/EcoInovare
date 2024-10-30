@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     validatePhoneNumberField() {
       try {
         if (this.requiredFields[2].value.length < 14) {
-          throw new Error("Informe o número de telefone");
+          throw new Error("Informe um telefone válido");
         } else {
           this.errorMessages[2].style.display = "none";
           this.requiredFields[2].style.border =
