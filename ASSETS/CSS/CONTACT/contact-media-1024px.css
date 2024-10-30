@@ -1,3 +1,48 @@
+@media (max-width: 991px) and (orientation: landscape) {
+  /* Menu de Navegação */
+  .navigation-menu {
+    flex-flow: column;
+    padding: 1.6rem;
+    gap: 2.5rem;
+  }
+
+  .EcoInovare-logo {
+    width: 20rem;
+  }
+
+  .btn-menu {
+    display: inline;
+  }
+
+  .navigation-items {
+    display: none;
+  }
+
+  .navigation-items li {
+    position: relative;
+  }
+
+  .navigation-items li:hover {
+    transform: none;
+  }
+
+  .navigation-items li:not(:last-child)::after {
+    content: "";
+    width: 100vw !important;
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 0.1rem solid var(--primary-color-2);
+  }
+
+  .navigation-open {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1rem;
+  }
+}
+
 @media (max-width: 1024px) {
   html {
     font-size: 58%;
@@ -28,5 +73,39 @@
   .map-location-section iframe {
     width: auto;
     flex: 1;
+  }
+
+  /* Rodapé */
+  .container-footer {
+    flex-flow: column;
+    gap: 3.9rem;
+  }
+
+  .container-footer h2 {
+    font-size: 2.3rem;
+    text-align: left;
+  }
+
+  .services,
+  .contact,
+  .about-us,
+  .social-media {
+    align-self: flex-start;
+  }
+
+  .services li a {
+    font-size: 1.7rem;
+  }
+
+  .contact li p {
+    font-size: 1.7rem;
+  }
+
+  .about-us li a {
+    font-size: 1.7rem;
+  }
+
+  .social-media li img {
+    width: 3.5rem;
   }
 }
