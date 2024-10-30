@@ -33,13 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
     validateNameField() {
       try {
         if (this.requiredFields[0].value.trim().length < 3) {
-          throw "Mínimo 3 caracteres";
+          throw new Error("Mínimo 3 caracteres");
         } else {
           this.errorMessages[0].style.display = "none";
         }
       } catch (error) {
         this.errorMessages[0].style.display = "inline";
-        this.errorMessages[0].textContent = error;
+        this.errorMessages[0].textContent = error.message;
       }
     }
 
@@ -53,26 +53,26 @@ document.addEventListener("DOMContentLoaded", function () {
     validateCompanyField() {
       try {
         if (this.requiredFields[1].value.trim() === "") {
-          throw "Informe o nome da empresa";
+          throw new Error("Informe o nome da empresa");
         } else {
           this.errorMessages[1].style.display = "none";
         }
       } catch (error) {
         this.errorMessages[1].style.display = "inline";
-        this.errorMessages[1].textContent = error;
+        this.errorMessages[1].textContent = error.message;
       }
     }
 
     validatePhoneNumberField() {
       try {
         if (this.requiredFields[2].value.length < 14) {
-          throw "Informe o número de telefone";
+          throw new Error("Informe o número de telefone");
         } else {
           this.errorMessages[2].style.display = "none";
         }
       } catch (error) {
         this.errorMessages[2].style.display = "inline";
-        this.errorMessages[2].textContent = error;
+        this.errorMessages[2].textContent = error.message;
       }
     }
 
@@ -93,11 +93,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (this.emailRegex.test(emailField)) {
           this.errorMessages[3].style.display = "none";
         } else {
-          throw "Informe um e-mail válido";
+          throw new Error("Informe um e-mail válido");
         }
       } catch (error) {
         this.errorMessages[3].style.display = "inline";
-        this.errorMessages[3].textContent = error;
+        this.errorMessages[3].textContent = error.message;
       }
     }
 
