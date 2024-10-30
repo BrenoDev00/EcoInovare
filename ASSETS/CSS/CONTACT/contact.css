@@ -277,12 +277,6 @@ textarea {
   margin-left: 0.6rem;
 }
 
-.container-informations {
-  display: flex;
-  flex-flow: column;
-  gap: 2rem;
-}
-
 address {
   display: flex;
   flex-flow: column;

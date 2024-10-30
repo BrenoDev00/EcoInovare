@@ -53,20 +53,18 @@
     flex-flow: column;
   }
 
-  /* Seção Informações de Contato */
-  .container-informations {
+  .container-contact-and-map {
     flex-flow: row;
-    align-items: center;
   }
 
-  .container-social-media {
-    flex-flow: column;
-    margin: 0;
-    margin-left: 5rem;
+  /* Seção Informações de Contato */
+  .contact-information-section {
+    flex: 1;
   }
 
   /* Seção Mapa de Localização */
   .map-location-section {
+    flex: 1;
     display: flex;
   }
 
