@@ -51,4 +51,9 @@
   .modal-group p {
     width: max-content;
   }
+
+  /* Rodapé */
+  .footer {
+    padding: 3.9rem;
+  }
 }
