@@ -3,10 +3,6 @@
     padding: 3.9rem;
   }
 
-  html {
-    font-size: 58%;
-  }
-
   /* Menu de Navegação */
   .navigation-menu {
     flex-flow: column;
