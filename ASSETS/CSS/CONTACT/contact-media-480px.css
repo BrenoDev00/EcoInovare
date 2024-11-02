@@ -1,0 +1,15 @@
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* Conteúdo Principal */
+  .container-form-field {
+    flex-flow: column;
+  }
+
+  /* Rodapé */
+  .footer {
+    padding: 2.5rem;
+  }
+}
