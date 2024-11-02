@@ -52,7 +52,7 @@
   transform: none;
 }
 
-.navigation-items li:nth-child(2)::after {
+.navigation-items li:nth-child(2)::before {
   content: "";
   position: absolute;
   bottom: -1rem;
