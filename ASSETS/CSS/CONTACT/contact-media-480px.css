@@ -1,3 +1,10 @@
+@media (max-width: 320px) {
+  /* Seção Mapa de Localização */
+  .map-location-section iframe {
+    width: 33rem;
+  }
+}
+
 @media (max-width: 480px) {
   html {
     font-size: 50%;

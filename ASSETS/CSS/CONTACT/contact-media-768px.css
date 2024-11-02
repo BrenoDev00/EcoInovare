@@ -49,6 +49,7 @@
 
   /* Modal após envio de formulário */
   .modal-group p {
+    font-size: 1.82rem;
     width: max-content;
   }
 
