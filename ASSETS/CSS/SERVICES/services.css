@@ -143,3 +143,68 @@ main {
 .btn-service-card:hover {
   box-shadow: 0rem 0rem 3rem 0rem var(--gray-color-2);
 }
+
+/* Modal de Serviços */
+.service-modal {
+  all: unset;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0rem 0.2rem 1rem 0rem var(--gray-color-2);
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  opacity: 0;
+  transition: opacity 0.7s, display 0.7s;
+}
+
+.service-modal[open] {
+  opacity: 1;
+}
+
+/* Animação de Modal */
+@starting-style {
+  .service-modal[open] {
+    opacity: 0;
+  }
+}
+
+.service-modal::backdrop {
+  backdrop-filter: blur(0.8rem);
+}
+
+.service-name {
+  text-align: center;
+  font-size: 1.92rem;
+}
+
+.service-description {
+  margin-top: 1.2rem;
+  max-width: 50rem;
+}
+
+.contact-info {
+  font-style: normal;
+  display: flex;
+  flex-flow: column;
+  gap: 0.52rem;
+}
+
+.service-modal p {
+  font-size: 1.6rem;
+}
+
+.text-highlight {
+  font-weight: bold;
+}
+
+.btn-close-modal {
+  border: none;
+  background-color: var(--primary-color-4);
+  color: white;
+  font-size: 1.92rem;
+}
