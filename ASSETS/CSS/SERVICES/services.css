@@ -120,6 +120,11 @@ main {
   background-color: white;
 }
 
+.rounded-border {
+  border-radius: 0.8rem;
+  height: 23.8rem;
+}
+
 .service-card img {
   width: 38rem;
 }
