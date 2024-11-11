@@ -146,7 +146,6 @@ main {
 
 /* Modal de Serviços */
 .service-modal {
-  all: unset;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -154,16 +153,18 @@ main {
   box-shadow: 0rem 0.2rem 1rem 0rem var(--gray-color-2);
   padding: 2.5rem;
   border-radius: 1.2rem;
-  background-color: white;
-  display: flex;
-  flex-flow: column;
-  gap: 2rem;
+  border: none;
+  color: var(--primary-color-3);
   opacity: 0;
   transition: opacity 0.7s, display 0.7s;
 }
 
 .service-modal[open] {
   opacity: 1;
+}
+
+.service-modal::backdrop {
+  backdrop-filter: blur(0.8rem);
 }
 
 /* Animação de Modal */
@@ -173,21 +174,20 @@ main {
   }
 }
 
-.service-modal::backdrop {
-  backdrop-filter: blur(0.8rem);
-}
-
 .service-name {
   text-align: center;
   font-size: 1.92rem;
+  color: var(--primary-color-2);
 }
 
 .service-description {
   margin-top: 1.2rem;
   max-width: 50rem;
+  line-height: 1.6;
 }
 
 .contact-info {
+  margin-top: 2rem;
   font-style: normal;
   display: flex;
   flex-flow: column;
@@ -198,11 +198,17 @@ main {
   font-size: 1.6rem;
 }
 
+.service-modal div {
+  text-align: center;
+}
+
 .text-highlight {
   font-weight: bold;
 }
 
 .btn-close-modal {
+  text-align: center;
+  margin-top: 1.8rem;
   border: none;
   background-color: var(--primary-color-4);
   color: white;
