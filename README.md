@@ -1,4 +1,4 @@
-# 🔥 EcoInovare - Soluções Ecológicas para empresas (em andamento)
+# 🔥 EcoInovare - Soluções Ecológicas para empresas
 ## Link do site: https://spectacular-choux-0ad7fd.netlify.app/
 ![Seção Hero EcoInovare](./ASSETS/IMAGES/HOME/secao_hero_EcoInovare.jpg)
 ## Descrição
