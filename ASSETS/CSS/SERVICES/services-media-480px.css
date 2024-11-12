@@ -1,3 +1,10 @@
+@media (max-width: 320px) {
+  /* Modal de  Serviço */
+  .service-description {
+    max-width: 32rem !important;
+  }
+}
+
 @media (max-width: 480px) {
   html {
     font-size: 50%;
