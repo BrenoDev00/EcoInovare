@@ -37,30 +37,3 @@
     width: 3.5rem;
   }
 }
-
-@media (max-width: 1240px) {
-  /* Conteúdo Principal */
-  .container-main-content {
-    flex-flow: column;
-  }
-
-  .container-contact-and-map {
-    flex-flow: row;
-  }
-
-  /* Seção Informações de Contato */
-  .contact-information-section {
-    flex: 1;
-  }
-
-  /* Seção Mapa de Localização */
-  .map-location-section {
-    flex: 1;
-    display: flex;
-  }
-
-  .map-location-section iframe {
-    width: auto;
-    flex: 1;
-  }
-}
