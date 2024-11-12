@@ -1,0 +1,20 @@
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* Modal de Serviço */
+  .service-modal {
+    overflow-x: hidden;
+  }
+
+  .service-description {
+    width: max-content;
+    max-width: 38rem;
+  }
+
+  /* Rodapé */
+  .footer {
+    padding: 2.5rem;
+  }
+}
