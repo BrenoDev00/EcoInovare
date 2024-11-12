@@ -66,6 +66,10 @@
 main {
   font-family: var(--main-font);
   padding: 0 6.1rem;
+  padding-bottom: 6.1rem;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .information-menu {
@@ -168,7 +172,6 @@ section {
 
 /* Rodapé */
 .footer {
-  margin-top: 15rem;
   background-color: var(--primary-color-3);
   box-shadow: 0rem 0.2rem 2rem 0rem var(--gray-color-3);
 }
